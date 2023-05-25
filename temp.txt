@@ -1,0 +1,4 @@
+
+Research Interest in Detailed:
+
+- Fine-Grained Complexity. I am very interested in the connection between fine-grained complexity and the other parts of complexity theory. In [xxx], we showed that one can apply the classical IP = PSPACE Theorem to prove several approximation hardness results for problems in P under a conjecture much weaker than SETH. 

@@ -1,0 +1,248 @@
+# jemdoc: menu{MENU}{index.html}, showsource, analytics{UA-31107207-1}
+= Publications and Manuscripts (by Categories)
+
+[https://scholar.google.com/citations?user=T_OhvOsAAAAJ&hl=en Google Scholar Page]
+
+=== Links:
+- [papersCat.html\#CC {{<font color=red size=+0.5><b>}}Computational Complexity{{</b></font>}}]
+
+- [papersCat.html\#fine-grained {{<font color=red size=+0.5><b>}}Fine-Grained Complexity{{</b></font>}}]
+
+- [papersCat.html\#MAB {{<font color=red size=+0.5><b>}}Multi-Armed Bandits{{</b></font>}}]
+
+- [papersCat.html\#quantum {{<font color=red size=+0.5><b>}}Quantum Complexity Theory{{</b></font>}}]
+
+~~~
+{}{raw}
+<a name="CC"></a>
+~~~
+== Computational Complexity
+
+- *Constructive Separations and Their Consequences*\n
+Lijie Chen, Ce Jin, Rahul Santhanam, Ryan Williams\n
+/Foundations of Computer Science/ (FOCS 2021)\n
+
+- *Hardness vs Randomness, Revised: Uniform, Non-Black-Box, and Instance-Wise* [https://eccc.weizmann.ac.il/report/2021/080/ \[eccc\]] [nonbb-derand-final.pptx \[slides\] ]\n
+Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]\n
+/Foundations of Computer Science/ (FOCS 2021)\n
+
+- *Majority vs. Approximate Linear Sum and average-case complexity below NC1* [https://eccc.weizmann.ac.il/report/2021/040/ \[eccc\]] [MAJ-apxSUM-dagstuhl.ppsx \[slides by Igor\]] \n
+Lijie Chen, Zhenjian Lu, Xin Lyu, Igor Oliveira\n
+/International Colloquium on Automata, Languages and Programming/ (ICALP), 2021 \n
+
+- *Simple and fast derandomization from very hard functions: Eliminating randomness at almost no cost*\n
+Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]\n
+/Symposium on the Theory of Computing/ (STOC 2021)\n
+[https://eccc.weizmann.ac.il/report/2020/148/ \[eccc\]] [http://www.wisdom.weizmann.ac.il/~oded/MC/294.html \[Oded's choice\]]\n
+[optimalderand-2020-ICT-CAS.pptx \[slides\]]\n
+
+- *Inverse-Exponential Correlation Bounds and Extremely Rigid Matrices from a New Derandomized XOR Lemma*\n
+Lijie Chen, Xin Lyu\n
+/Symposium on the Theory of Computing/ (STOC 2021)\n
+[Derand-XOR.pdf \[paper\]] [https://eccc.weizmann.ac.il/report/2021/003/ \[eccc]]\n
+
+- *Almost Everywhere Circuit Lower Bounds from Non-Trivial Derandomization*\n
+Lijie Chen, Xin Lyu, Ryan Williams\n
+/Foundations of Computer Science/ (FOCS 2020)\n
+[https://eccc.weizmann.ac.il/report/2020/150/ \[eccc\]]\n
+[https://www.youtube.com/watch?v=vpyoZdv--nw&list=PL3DbynX8gwfJLYrm4EoZn6aK7IAACiTKa&index=6 \[video by Xin Lyu in FOCS 2020\]] \n
+
+- *On Exponential-Time Hypotheses, Derandomization, and Circuit Lower Bounds*\n
+Lijie Chen, Ron Rothblum, Roei Tell, Eylon Yogev\n
+/Foundations of Computer Science/ (FOCS 2020)\n
+[https://eccc.weizmann.ac.il/report/2019/169 \[eccc\]]
+[https://www.youtube.com/watch?v=6xmE9e5m9WA&list=PL3DbynX8gwfJLYrm4EoZn6aK7IAACiTKa \[video by Roei Tell in FOCS 2020\]] \n
+
+- *Sharp Threshold Results for Computational Complexity*\n
+Lijie Chen, Ce Jin, Ryan Williams\n
+/Symposium on the Theory of Computing/ (STOC 2020)\n
+[https://eccc.weizmann.ac.il/report/2020/065/ \[eccc\]] [sharp-threshold.pptx \[slides\]] \n
+
+- *Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization*\n
+Lijie Chen, Hanlin Ren\n
+/Symposium on the Theory of Computing/ (STOC 2020)\n
+[Reunion_Talk.pptx \[slides\]] [https://eccc.weizmann.ac.il/report/2020/010/ \[eccc\]] \n
+
+- *Beyond Natural Proofs: Hardness Magnification and Locality*\n
+Lijie Chen, Shuichi Hirahara, Igor Oliveira, Jan Pich, Ninad Rajgopal, Rahul Santhanam\n
+/Innovations in Theoretical Computer Science/ (ITCS 2020)\n
+[https://eccc.weizmann.ac.il/report/2019/168/ \[eccc\]] [https://arxiv.org/abs/1911.08297 \[arxiv\]]\n
+
+- *Non-deterministic Quasi-Polynomial Time is Average-case Hard for ACC Circuits*\n
+Lijie Chen\n
+[Austin-NQP-Average-Case-Lower-Bound.pptx \[Talk at UT Austin's Theory Seminar\]]\n
+/Foundations of Computer Science/ (FOCS 2019)\n
+[https://eccc.weizmann.ac.il/report/2019/031/ \[eccc\]] [Che19-journal-version.pdf \[draft of journal version\]]\n
+
+- *Efficient Construction of Rigid Matrices Using an NP Oracle*\n
+Josh Alman, Lijie Chen\n
+/Foundations of Computer Science/ (FOCS 2019)\n
+*Machtey Award for Best Student Paper*\n 
+[FOCS_2019_rigidmatrix.pdf \[pdf\]] [FOCS_2019_rigidmatrix_slides.pptx \[slides\]] \n
+
+- *Hardness Magnification for all Sparse NP Languages*\n
+Lijie Chen, Ce Jin, Ryan Williams\n
+/Foundations of Computer Science/ (FOCS 2019)\n
+[https://eccc.weizmann.ac.il/report/2019/118/ \[eccc\]] \n
+
+- *Relations and Equivalences Between Circuit Lower Bounds and Karp-Lipton Theorems*\n
+Lijie Chen, [http://www.dylanmmckay.com/ Dylan McKay], Cody Murray, [https://people.csail.mit.edu/rrw/ Ryan Williams]\n
+/Computational Complexity Conference/ (CCC 2019)\n
+[https://eccc.weizmann.ac.il/report/2019/075/ \[eccc\]] [http://drops.dagstuhl.de/opus/frontdoor.php?source_opus=10852 \[proceeding version\]]\n
+
+- *Stronger Connections Between Circuit Analysis and Circuit Lower Bounds, via PCPs of Proximity*\n
+Lijie Chen, [https://people.csail.mit.edu/rrw/ Ryan Williams]\n
+/Computational Complexity Conference/ (CCC 2019)\n
+This paper subsumes a previous manuscript [https://arxiv.org/abs/1805.10698 \[arxiv\] ]\n
+[CCC_2019_PCPP.pptx \[slides\]] [http://drops.dagstuhl.de/opus/frontdoor.php?source_opus=10841 \[proceeding version\]]\n
+
+- *Bootstrapping Results for Threshold Circuits "Just Beyond" Known Lower Bounds*\n
+Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]\n
+/Symposium on the Theory of Computing/ (STOC 2019)\n
+*Danny Lewin Best Student Paper Award*\n 
+[https://eccc.weizmann.ac.il/report/2018/199/ \[eccc\]] [http://www.wisdom.weizmann.ac.il/~oded/MC/256.html \[Oded's choice\]] [STOC_2019_TC0_slides.pdf \[slides\]]\n
+
+- *On The Power of Statistical Zero Knowledge*\n
+Adam Bouland, Lijie Chen, Dhiraj Holden, Justin Thaler, Prashant Nalini Vasudevan\n 
+/Foundations of Computer Science/ (FOCS 2017)\n
+*Invited to the SICOMP Special Issue for FOCS 2017*\n
+[http://eccc.hpi-web.de/report/2016/140/ \[eccc\]] [http://arxiv.org/abs/1609.02888 \[arxiv\]] [FOCS_2017_SZKPP.pdf \[slides\]]\n
+
+~~~
+{}{raw}
+<a name="fine-grained"></a>
+~~~
+== Fine-Grained Complexity
+
+- *An Equivalence Class for Orthogonal Vectors*\n
+Lijie Chen, [https://people.csail.mit.edu/rrw/ Ryan Williams]\n
+/ACM-SIAM Symposium on Discrete Algorithms/ (SODA 2019)\n
+[SODA_2019_OV-Equiv.pdf \[proceeding version\]] [SODA_2019_OV-Equiv-Fullversion.pdf \[full version\]] [SODA_2019_OV_PPT.pptx \[slides\]]\n
+
+- *Fine-grained Complexity Meets IP = PSPACE*\n
+Lijie Chen, [http://people.csail.mit.edu/shafi/ Shafi Goldwasser], Kaifeng Lyu, [https://guyrothblum.wordpress.com/ Guy N. Rothblum], [https://cs.stanford.edu/~aviad/ Aviad Rubinstein]\n
+/ACM-SIAM Symposium on Discrete Algorithms/ (SODA 2019)\n
+[https://arxiv.org/abs/1805.02351 \[arxiv\] ]\n
+
+- *Nearly Optimal Separation Between Partially And Fully Retroactive Data Structures*\n
+Lijie Chen, Erik D. Demaine, Yuzhou Gu, Virginia Vassilevska Williams, Yinzhan Xu, Yuancheng Yu\n 
+/Scandinavian Symposium and Workshops on Algorithm Theory/ (SWAT 2018)\n
+[https://arxiv.org/abs/1804.06932 \[arxiv\] ]\n
+
+- *On The Hardness of Approximate and Exact (Bichromatic) Maximum Inner Product*\n 
+Lijie Chen\n
+/Computational Complexity Conference/ (CCC 2018)\n
+*Invited to the Toc Special Issue for CCC 2018*\n
+[https://eccc.weizmann.ac.il/report/2018/026/ \[eccc\] ] [https://arxiv.org/abs/1802.02325 \[arxiv\]] [CCC_2018_MaxIP.pptx \[slides\] ] \n
+[https://theoryofcomputing.org/articles/v016a004/ \[journal version\]]\n
+
+~~~
+{}{raw}
+<a name="streaming"></a>
+~~~
+== Streaming Algorithms/Complexity
+- *Almost Optimal Super-Constant-Pass Streaming Lower Bounds for Reachability* [https://eccc.weizmann.ac.il/report/2021/027/ \[eccc]]\n
+Lijie Chen, Gillat Kol, Dmitry Paramonov, Raghuvansh Saxena, Zhao Song, Huacheng Yu\n
+/Symposium on the Theory of Computing/ (STOC 2021)\n
+
+- *Near-Optimal Two-Pass Streaming Algorithm for Sampling Random Walks over Directed Graphs* [https://arxiv.org/abs/2102.11251 \[arxiv\]]\n
+Lijie Chen, Gillat Kol, Dmitry Paramonov, Raghuvansh Saxena, Zhao Song, Huacheng Yu\n
+/International Colloquium on Automata, Languages and Programming/ (ICALP), 2021 \n
+
+~~~
+{}{raw}
+<a name="MAB"></a>
+~~~
+== Multi-Armed Bandits
+
+- *Towards Instance Optimal Bounds for Best Arm Identification*\n
+Lijie Chen, Jian Li, Mingda Qiao\n
+/Conference on Learning Theory/ (COLT 2017)\n
+[http://arxiv.org/abs/1608.06031 \[arxiv\]] [http://proceedings.mlr.press/v65/chen17b.html \[conference version\] ]\n
+
+- *Nearly Optimal Sampling Algorithms for Combinatorial Pure Exploration*\n
+Lijie Chen, Anupam Gupta, Jian Li, Mingda Qiao and Ruosong Wang\n
+/Conference on Learning Theory/ (COLT 2017)\n
+[https://arxiv.org/abs/1706.01081 \[arxiv\] ] [http://proceedings.mlr.press/v65/chen17a.html \[conference version\] ]\n
+
+- *Nearly Instance Optimal Sample Complexity Bounds for Top-k Arm Selection*\n 
+Lijie Chen, Jian Li, Mingda Qiao\n
+/International Conference on Artificial Intelligence and Statistics/ (AISTATS 2017)\n
+[http://arxiv.org/abs/1702.03605 \[arxiv\] ]  [http://proceedings.mlr.press/v54/chen17a/chen17a.pdf \[conference version\] ]\n
+
+- *Pure Exploration of Multi-armed Bandit Under Matroid Constraints*\n
+Lijie Chen, Anupum Gupta, Jian Li\n
+/Conference on Learning Theory/ (COLT 2016)\n
+[http://arxiv.org/abs/1605.07162 \[arxiv\] ] [http://www.jmlr.org/proceedings/papers/v49/chen16a.pdf \[conference version\]]
+[COLT_2016_Matroid.pdf \[slides\]]\n
+
+- *Open Problem: Best Arm Identification: Almost Instance-Wise Optimality and the Gap Entropy Conjecture*\n 
+Lijie Chen, Jian Li\n 
+/Conference on Learning Theory Open Problem/ (COLT 2016 Open Problem)\n
+[http://arxiv.org/abs/1605.08481 \[arxiv\] ] [http://www.jmlr.org/proceedings/papers/v49/chen16b.pdf \[conference version\]]
+[COLT_2016_OpenProblem.pdf \[slides\]]\n
+
+- *On the Optimal Sample Complexity for Best Arm Identification*\n 
+Lijie Chen, Jian Li\n
+[http://arxiv.org/abs/1511.03774 \[arxiv\] ]\n
+
+~~~
+{}{raw}
+<a name="quantum"></a>
+~~~
+== Quantum Complexity Theory
+
+- *Complexity-Theoretic Foundations of Quantum Supremacy Experiments*\n
+Scott Aaronson, Lijie Chen\n
+/Computational Complexity Conference/ (CCC 2017)\n
+*Invited to the Toc Special Issue for CCC 2017*\n
+[http://eccc.hpi-web.de/report/2016/200/ \[eccc\]] [https://arxiv.org/abs/1612.05903 \[arxiv\]] 
+[CCC_2017_QuantumSupremacy.pdf \[slides\]] [http://drops.dagstuhl.de/opus/volltexte/2017/7527/ \[conference version\] ]
+\n
+
+- *Adaptivity vs Postselection*\n 
+Lijie Chen\n
+/International Symposium on Algorithm and Computation/ (ISAAC 2016)\n
+*Best Student Paper Award*\n
+[http://arxiv.org/abs/1606.04016 \[arxiv\] ] [http://drops.dagstuhl.de/opus/volltexte/2016/6796/pdf/LIPIcs-ISAAC-2016-26.pdf \[conference version\] ] [ISAAC_2016_AdaPost.pdf \[slides\] ]\n
+
+- *A Note on Oracle Separations for BQP*\n 
+Lijie Chen\n
+[http://arxiv.org/abs/1605.00619 \[arxiv\] ]\n
+
+== Game Theory
+
+- *K-Memory Strategies in Repeated Games*\n
+Lijie Chen, Fangzhen Lin, Pingzhong Tang, Kangning Wang, Ruosong Wang, Shiheng Wang\n
+Extended abstract, /International Conference on Antonomous Agents and Multiagent Sytems/ (AAMAS 2017)\n
+
+- *Bounded rationality of restricted Turing machines*\n 
+Lijie Chen, Pingzhong Tang, Ruosong Wang\n
+AAAI 2017\n 
+[https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14300 \[conference version\] ]\n
+
+== Algorithms
+
+- *Improved Algorithms for Maintaining DFS Tree in Undirected Graphs*\n 
+Lijie Chen, Ran Duan, Ruosong Wang, Hanrui Zhang, Tianyi Zhang\n        
+/Scandinavian Symposium and Workshops on Algorithm Theory/ (SWAT 2018)\n
+[https://arxiv.org/abs/1607.04913 \[arxiv\] ]\n
+
+- *Classical Algorithms from Quantum and Arthur-Merlin Communication Protocols*\n
+Lijie Chen, Ruosong Wang\n
+/Innovations in Theoretical Computer Science/ (ITCS 2019)\n
+[https://arxiv.org/abs/1811.07515 \[arxiv\]] [ITCS_2019_CC_PPT.pptx \[slides\]] \n
+
+== Distributed Computing
+
+- *Broadcast Congested Clique: Planted Cliques and Pseudorandom Generators*\n
+Lijie Chen, Ofer Grossman\n
+/Symposium on Principles of Distributed Computing/ (PODC 2019)\n
+[https://eccc.weizmann.ac.il/report/2019/072/ \[eccc\]]\n
+
+== Differential Privacy
+
+- *On Distributed Differential Privacy and Counting Distinct Elements*\n
+Lijie Chen, [https://sites.google.com/view/badihghazi/home Badih Ghazi], [https://sites.google.com/site/ravik53/ Ravi Kumar], [https://pasin30055.github.io/ Pasin Manurangsi]\n
+/Innovations in Theoretical Computer Science/ (ITCS 2021)\n
+[https://arxiv.org/abs/2009.09604 \[arxiv\]]\n

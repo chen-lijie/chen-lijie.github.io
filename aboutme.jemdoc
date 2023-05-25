@@ -1,0 +1,29 @@
+# jemdoc: menu{MENU}{index.html}, showsource, analytics{UA-31107207-1}
+= About Me
+
+~~~
+{}{img_left}{lijie.jpeg}{Lijie Chen} 
+ 
+*Research Interests*: /Theoretical Computer Science /\n\n I have a broad interest in theoretical computer science. In particular, I am interested in {{<font color=red size=+0.5><b>}}Computational Complexity{{</b></font>}} and {{<font color=red size=+0.5><b>}}Fine-Grained Complexity{{</b></font>}}.
+   
+I am currently a fourth year graduate student at MIT, and I am very fortunated to be advised by [https://people.csail.mit.edu/rrw/ Ryan Williams]. Prior to that, I received my bachelor's degree from [http://iiis.tsinghua.edu.cn/en/yaoclass/ Yao Class] at Tsinghua University.
+
+At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jianli/ Jian Li], working on [papersCat.html /Multi-Armed Bandits/]. During the Spring of 2016, I was visiting MIT, working under the supervision of Prof. [https://www.scottaaronson.com/ Scott Aaronson] on [papersCat.html /Quantum Complexity/].
+
+== Random Stuffs
+
+I used to participate in Competitive Programming. [https://www.topcoder.com/members/WJMZBMR/ TopCoder] and [http://codeforces.com/profile/YuukaKazami Codeforces]. (Distant Memories Now)
+
+== Selected Awards
+
+- 2013 International Olympiad in Informatics, Gold medal, First Place.
+
+- 2015/2016 International Collegiate Programming Contest, Asia-East Continent Final, First place.
+
+- 2017 ACM-ICPC world finals, 6th place (with Yuhao Du, Ce Jin).
+
+- 2019 STOC Best Student Paper.
+
+- 2019 FOCS Best Student Paper.
+
+- 2020 IBM Fellowship

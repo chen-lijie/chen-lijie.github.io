@@ -1,0 +1,22 @@
+# jemdoc: menu{MENU}{index.html}, showsource, analytics{UA-31107207-1}, addpackage{amsfonts}, addpackage{amsmath}
+= Open Problems
+Here are some open problems I am super interested about, and have/had been working on.
+
+~~~
+== Hardness of Exact Integer Bichromatic Maximum Inner Product
+- Problem: Suppose you are given two sets $A,B$ of $n$ vectors from $ \mathbb{Z}^d $, and want to compute $ \max_{(a,b) \in A \times B} a \cdot b $. Show that this problem requires $n^{2 - o(1)}$ time for super constant $d$.
+
+- History & Motivation:
+
+- What is Known: In [https://eccc.weizmann.ac.il/report/2018/026/ This paper], I showed under SETH, this problem requires $n^{2-o(1)}$ time when $d=2^{O(\log^* n)}$. The current best algorithm runs in $n^{2 - 1/O(d)}$ time, only truly-subquadratic for constant $d$.
+- Can we strength the $2^{O(\log^* n)}$ lower bound to an $\omega(1)$ one?
+~~~
+
+~~~
+== Gap Entropy Conjecture for Best-1-Arm
+- Problem: You are given $n$ Gaussian distributions with unit variance and known means. In one round you can choose a distribution and get a sample from it, you want to determine the distribution with the highest mean with probability at least $1 - \delta$, while using as few samples as possible. What is the optimal sample complexity?
+
+- History & Motivation:
+
+- What is Known: 
+~~~

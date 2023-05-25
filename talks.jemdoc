@@ -1,0 +1,89 @@
+# jemdoc: menu{MENU}{index.html}, showsource, analytics{UA-31107207-1}
+= Talks
+
+== Chronological Order
+
+- *Sharp Threshold Results for Computational Complexity*\n
+Lijie Chen, Ce Jin, Ryan Williams\n
+/Oxford-Warwick complexity Meetings/ (2020)\n
+[sharp-threshold.pptx \[slides\]] \n
+
+- *Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization*\n
+Lijie Chen, Hanlin Ren\n
+/Combinatorics and TCS seminar, the University of Chicago/\n
+/Lower Bounds in Computational Complexity Reunion, the Simons Institute for the Theory of Computing/\n
+[Reunion_Talk.pptx \[slides\]] \n
+
+- *Efficient Construction of Rigid Matrices Using an NP Oracle*\n
+Josh Alman, Lijie Chen\n
+/Foundations of Computer Science/ (FOCS 2019)\n
+[FOCS_2019_rigidmatrix_slides.pptx \[slides\]] \n
+
+- *Recent Developments in Fine-Grained Complexity via Communication Complexity*\n
+Tsinghua University 2019\n
+[Tsinghua2019-Fine-Grained.pptx \[slides\]]\n
+
+- *Stronger Connections Between Circuit Analysis and Circuit Lower Bounds, via PCPs of Proximity*\n
+Lijie Chen, [https://people.csail.mit.edu/rrw/ Ryan Williams]\n
+CCC 2019\n
+[CCC_2019_PCPP.pptx \[slides\]]\n
+
+- *Bootstrapping Results for Threshold Circuits "Just Beyond" Known Lower Bounds*\n
+Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]\n
+/Symposium on the Theory of Computing/ (STOC 2019)\n
+[STOC_2019_TC0_slides.pdf \[slides\]]\n
+
+- *Non-deterministic Quasi-Polynomial Time is Average-case Hard for ACC Circuits*\n
+Lijie Chen\n
+Theory Seminar of UT Austin\n
+Harvard TGINF\n
+CMU Theory Lunch\n
+/Foundations of Computer Science/ (FOCS 2019)\n
+[Austin-NQP-Average-Case-Lower-Bound.pptx \[slides\]]\n
+
+- *Classical Algorithms from Quantum and Arthur-Merlin Communication Protocols*\n
+Lijie Chen, Ruosong Wang\n
+ITCS 2019\n
+[ITCS_2019_CC_PPT.pptx \[slides\]]\n
+
+- *An Equivalence Class for Orthogonal Vectors*\n
+Lijie Chen, [https://people.csail.mit.edu/rrw/ Ryan Williams]\n
+SODA 2019\n
+[SODA_2019_OV_PPT.pptx \[slides\]]\n
+
+- *Recent Structure Lemmas for Depth-Two Threshold Circuits*\n
+Lijie Chen\n
+Simons Institute for the Theory of Computing 2018\n
+[Simons-2018-THRTHR.pptx \[slides\]]\n
+
+- *On The Hardness of Approximate and Exact (Bichromatic) Maximum Inner Product*\n 
+Lijie Chen\n
+CCC 2018\n
+Algorithms \& Complexity Seminar, MIT\n
+[CCC_2018_MaxIP.pptx \[slides\]]\n
+
+- *On The Power of Statistical Zero Knowledge*\n
+Adam Bouland, Lijie Chen, Dhiraj Holden, Justin Thaler, Prashant Nalini Vasudevan\n 
+FOCS 2017\n
+Algorithms \& Complexity Seminar, MIT\n
+[FOCS_2017_SZKPP.pdf \[slides\]]\n
+
+- *Complexity-Theoretic Foundations of Quantum Supremacy Experiments*\n
+Scott Aaronson, Lijie Chen\n
+CCC 2017\n
+[CCC_2017_QuantumSupremacy.pdf \[slides\]]\n
+
+- *Adaptivity vs Postselection*\n 
+Lijie Chen\n
+ISAAC 2016\n
+[ISAAC_2016_AdaPost.pdf \[slides\] ]\n
+
+- *Pure Exploration of Multi-armed Bandit Under Matroid Constraints*\n
+Lijie Chen, Anupum Gupta, Jian Li\n
+COLT 2016\n
+[COLT_2016_Matroid.pdf \[slides\]]\n
+
+- *Open Problem: Best Arm Identification: Almost Instance-Wise Optimality and the Gap Entropy Conjecture*\n 
+Lijie Chen, Jian Li\n 
+COLT 2016 Open Problem\n
+[COLT_2016_OpenProblem.pdf \[slides\]]\n

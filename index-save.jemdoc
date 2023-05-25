@@ -1,0 +1,106 @@
+# jemdoc: menu{MENU}{index.html}, showsource, analytics{UA-31107207-1}
+= Lijie Chen 
+
+~~~
+{}{img_left}{lijie.jpg}{Lijie Chen} 
+ 
+*Research Interests*: /Theoretical Computer Science /\n\n I have a broad interest in theoretical computer science. In particular, I am interested in {{<font color=red size=+0.5><b>}}Computational Complexity{{</b></font>}} and {{<font color=red size=+0.5><b>}}Fine-Grained Complexity{{</b></font>}}.
+  
+I am currently a first year graduate student at MIT, advised by [https://people.csail.mit.edu/rrw/ Ryan Williams]. Prior to that, I received my bachelor's degree from [http://iiis.tsinghua.edu.cn/en/yaoclass/ Yao Class] at Tsinghua University.
+~~~
+
+== *Selected Publications*
+
+- *On The Hardness of Approximate and Exact (Bichromatic) Maximum Inner Product*\n 
+Lijie Chen\n
+/Computational Complexity Conference/ (CCC 2018)\n
+*Invited to the Toc Special Issue for CCC 2018*\n
+[https://eccc.weizmann.ac.il/report/2018/026/ \[eccc\] ] [https://arxiv.org/abs/1802.02325 \[arxiv\]] [CCC_2018_MaxIP.pptx \[slides\] ]\n
+Summary: /Under SETH, we give a characterization on when approxiamte Boolean Max-IP is hard (w.r.t approxiamtion ratios and vector dimensions). We also show quadratic time hardness for Z-Max-IP with 2^(log\* n) dimensions.\n
+One notable corollary is that finding the furthest pair among n points in 2^(log\* n) dimension Euclidian space requires essentialy n^2 time under SETH./\n
+
+- *Complexity-Theoretic Foundations of Quantum Supremacy Experiments*\n
+Scott Aaronson, Lijie Chen\n
+/Computational Complexity Conference/ (CCC 2017)\n
+*Invited to the Toc Special Issue for CCC 2017*\n
+[http://eccc.hpi-web.de/report/2016/200/ \[eccc\]] [https://arxiv.org/abs/1612.05903 \[arxiv\]] 
+[CCC_2017_QuantumSupremacy.pdf \[slides\]]\n
+
+- *On The Power of Statistical Zero Knowledge*\n
+Adam Bouland, Lijie Chen, Dhiraj Holden, Justin Thaler, Prashant Nalini Vasudevan\n 
+/Foundations of Computer Science/ (FOCS 2017)\n
+*Invited to the SICOMP Special Issue for FOCS 2017*\n
+[http://eccc.hpi-web.de/report/2016/140/ \[eccc\]] [http://arxiv.org/abs/1609.02888 \[arxiv\]] [FOCS_2017_SZKPP.pdf \[slides\]]\n
+Summary: /We constructed an oracle separation between SZK and PP, solving an open question by Watrous in 2002./
+
+
+- *Towards Instance Optimal Bounds for Best Arm Identification*\n
+Lijie Chen, Jian Li, Mingda Qiao\n
+/Conference on Learning Theory/ (COLT 2017)\n
+[http://arxiv.org/abs/1608.06031 \[arxiv\]]\n
+Summary: /We made a step toward a complete understanding of the optimal sample complexity of the fundemental Best-1-Arm problem./
+
+== *Submitted \/ Manuscripts*
+- *Fine-grained Complexity Meets IP = PSPACE*\n
+Lijie Chen, Shafi Goldwasser, Kaifeng Lyu, Guy N. Rothblum, Aviad Rubinstein\n
+[https://arxiv.org/abs/1805.02351 \[arxiv\] ]\n
+
+- *Toward Super-Polynomial Size Lower Bounds for Depth-Two Threshold Circuits*\n
+Lijie Chen\n
+[https://arxiv.org/abs/1805.10698 \[arxiv\] ]\n
+
+== [papersYear.html *Full Publications*]\n
+
+== Awards
+
+- 2013 International Olympiad in Informatics, Gold medal, First Place.
+
+- 2014 ACM-ICPC world finals, Bronze medal, 11th Place (with Qiwei Feng, Qinshi Wang).
+
+- 2016 ISAAC Best Student Paper.                    
+
+- 2017 ACM-ICPC world finals, Silver medal, 6th place (with Yuhao Du, Ce Jin).
+
+- *Majority vs. Approximate Linear Sum and average-case complexity below NC1* [https://eccc.weizmann.ac.il/report/2021/040/ \[eccc\]] [MAJ-apxSUM-dagstuhl.ppsx \[slides by Igor\]] [https://www.youtube.com/watch?v=3sA1lfwfHO8 \[video by Xin\]] {{<span class="title" onclick="toggle('summary-appxsum')" style="cursor:pointer; u:hover">
+<font color=red>
+[short highlight]
+</font>
+</span><br>
+<span id="summary-appxsum" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+For any circuit class $\mathcal{C}$ contained in $\mathsf{NC}^1$, (among many other things) we show the following:
+<br><br><b> Average-Case hardness w.r.t. certain distributions $\Leftrightarrow$ Average-Case hardness w.r.t. the uniform distribution: </b> 
+If $E$ is $\delta$-average-case hard against $\mathcal{C}$ w.r.t. to some distribution $\mathcal{D}$, then $E$ is also $\delta$-average-case hard against $\mathcal{C}$ under the uniform distribution.
+<br><br><b> Generic seed-reduction for PRGs: </b> 
+If there is an $(n-1)$-seed PRG fooling $\mathcal{C}$ with error $n^{-\omega(1)}$, then there is an $n^{o(1)}$-seed PRG fooling $\mathcal{C}$ with error $n^{-\omega(1)}$.
+</span>}}
+
+- *Almost Optimal Super-Constant-Pass Streaming Lower Bounds for Reachability* [https://eccc.weizmann.ac.il/report/2021/027/ \[eccc]] [https://www.youtube.com/watch?v=mXMh2T1To2w \[video by Raghuvansh Saxena at STOC 2021\]] {{<span class="title" onclick="toggle('summary-reach')" style="cursor:pointer; u:hover">
+<font color=red>
+[short highlight]
+</font>
+</span><br>
+<span id="summary-reach" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+We prove that any $o\left(\sqrt{\log n}\right)$-pass streaming algorithm requires $n^{2-o(1)}$ space to solve the Reachability problem for directed graphs (given two vertices $s$ and $t$, determine whether $s$ can reach $t$ in the given graph). By known reductions, our result implies the same almost quadratic lower bounds for other problems, including maximum matching, shortest path, matrix rank, and linear programming.
+<br><br>The construction of our hard instances makes crucial use of Ruzsa-Szeme&racute;edi graphs and low-depth sorting networks.
+</span>}}
+
+- *Near-Optimal Two-Pass Streaming Algorithm for Sampling Random Walks over Directed Graphs* [https://arxiv.org/abs/2102.11251 \[arxiv\]] [https://www.youtube.com/watch?v=NbI1lbcjfDg \[video by Raghuvansh\]]
+
+- *Simple and fast derandomization from very hard functions: Eliminating randomness at almost no cost* [https://eccc.weizmann.ac.il/report/2020/148/ \[eccc\]] [optimalderand-2020-ICT-CAS.pptx \[slides by me\]] [roei-slides-fast-derand.pdf \[slides by Roei\]] [https://www.youtube.com/watch?v=ZSGfxuga0fo \[video by Roei Tell at STOC 2021\]] {{<span onclick="toggle('summary-fastderand-short')" style="cursor:pointer; u:hover; white-space:nowrap">
+<font color=red>
+[short highlight]
+</font>
+</span><br>
+<span id="summary-fastderand-short" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+<b> Derandomization with linear overhead: </b> Under plausible assumptions, we show that any $T$-time randomized computation can be derandomized in $T \cdot n$-time.
+<br><br><b> Conditional Optimality: </b> Assuming NSETH, the $n$ overhead above is optimal.
+</span> <span onclick="toggle('summary-fastderand-long')" style="cursor:pointer; u:hover; white-space:nowrap">
+<font color=red>
+[longer summary]
+</font>
+</span><br>
+<span id="summary-fastderand-long" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+<b> Derandomization with a near-linear overhead: </b> Assuming (1) one-way function exists and (2) generic $2^{kn}$-time computation cannot be speed up to $2^{(k-\varepsilon) n}$ time with $2^{(1-\varepsilon)n}$ bits of advice, we show that $T(n)$-time randomized computation can be derandomized in roughly $T(n) \cdot n^{1+\varepsilon}$ time. 
+<br><br><b> Optimality assuming NSETH: </b> Assuming Nondeterministic Strong Exponential Time Hypothesis (NSETH), the $n$ overhead is optimal (upto $n^{o(1)}$) for every reasonable time-bound $T(n)$. Indeed, we only need a weaker version claiming that $\#\mathsf{SAT}$ requires $2^{(1-o(1)) \cdot n}$ non-deterministic time (aka, $\#\mathsf{NSETH}$).
+<br><br><b> Average-Case Derandomization with basically no overhead </b> Assuming similar assumptions, we show that $T(n)$-time randomized computation can be derandomized in $T(n) \cdot n^{o(1)}$-time with respect to every $T(n)$-time samplable distribution $S$ (meaning, for $x \sim S$, the derandomization fails with $n^{-\omega(1)}$ probability).
+</span>}}

@@ -1,0 +1,8 @@
+{{<span class="title" onclick="toggle('summary-VSDO')" style="cursor:pointer; u:hover">
+<font color=red>
+[summary]
+</font>
+</span><br>
+<span id="summary-VSDO" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+<b> Summary: </b> We design data structures that maintain approximate distances for weighted undirected graphs, and tolerates multiple vertex failures. In particular, given any two vertices $u,v$ and any set of $d$ failed vertices $D$, we can output an $(1+\epsilon)$-approximation of the length of shortest path from $u$ to $v$ that avoids $D$. Roughly speaking, for any constant number of failures, our structure uses $O(n^{2.01})$ space and $\operatorname{poly}(\log n,\epsilon^{-1})$ query time.
+</span>}}

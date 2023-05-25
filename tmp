@@ -1,0 +1,5 @@
+
+~~~
+{Summary}
+Currently, lower bounds [IPS97,CSS16] or non-trivial circuit-analysis algorithms [Tell'18] are known for n^(1+c^(-d)) size depth-d TC circuits for some specific constant c. We show that for both of them, if the dependence on c can be 
+~~~

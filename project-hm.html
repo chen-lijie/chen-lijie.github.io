@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Hardness Magnification</title>
+        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
+        </script>
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          showProcessingMessages: false,
+          TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+          function toggle(pId) {
+            var e=document.getElementById(pId);
+            if (!e) return;
+            if (e.style.display == "none") {
+              e.style.display = "block"
+            } else {
+              e.style.display = "none"
+            }
+            return;
+          }
+        </script>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-31107207-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="papersYear.html">Publications&nbsp;(by&nbsp;Years)</a></div>
+<div class="menu-item"><a href="papersCat.html">Publications&nbsp;(by&nbsp;Categories)</a></div>
+<div class="menu-item"><a href="aboutme.html">About&nbsp;Me</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Hardness Magnification</h1>
+</div>
+<p>The recent surprising phenomenon of hardness magnification (HM in short) (similar phenomenon was known before, but the interest in them has been revived since <a href="https://eccc.weizmann.ac.il/report/2018/139/" target=&ldquo;blank&rdquo;>[Oliveira-Santhanam&rsquo;18]</a>) shows that innocent-looking weak circuit lower bounds for specific problems such as MCSP (the Minimum Circuit Size Problem, given a truth-table of a Boolean function and asks what the minimum size of a circuit computing it is) can imply major circuit lower bounds such as NP not in P/poly. For example, if a sparse variant of MCSP does not have \(n \cdot \mathrm{polylog}(n)\) size circuit, then \(\mathsf{NP} \ne \mathsf{P}\) (<a href="https://people.csail.mit.edu/rrw/MCSP-MKTP-stoc19.pdf" target=&ldquo;blank&rdquo;>[McKay-Murray-Williams&rsquo;19]</a>).
+</p>
+<p>Several of my past papers (<a href="https://eccc.weizmann.ac.il/report/2019/075/" target=&ldquo;blank&rdquo;>[Chen-McKay-Murray-Williams&rsquo;19]</a>, <a href="https://eccc.weizmann.ac.il/report/2019/118/" target=&ldquo;blank&rdquo;>[Chen-Jin-Williams&rsquo;19]</a>, <a href="https://eccc.weizmann.ac.il/report/2020/065/" target=&ldquo;blank&rdquo;>[Chen-Jin-Williams&rsquo;20]</a>, <a href="https://eccc.weizmann.ac.il/report/2019/168/" target=&ldquo;blank&rdquo;>[Chen-Hirahara-Oliveira-Pich-Rajgopal-Santhanam&rsquo;20]</a>, <a href="https://eccc.weizmann.ac.il/report/2018/199/" target=&ldquo;blank&rdquo;>[Chen-Tell&rsquo;19]</a>) aimed to better understand this phenomenon and are summarized below.
+</p>
+<h2><b>1. What properties of sparse-MCSP enabled such a hardness magnification phenomenon?</b> </h2>
+<ul>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2019/075/" target=&ldquo;blank&rdquo;>[Chen-McKay-Murray-Williams&rsquo;19]</a> and <a href="https://eccc.weizmann.ac.il/report/2019/118/" target=&ldquo;blank&rdquo;>[Chen-Jin-Williams&rsquo;19]</a></b>, we showed similar HM phenomenona for any \(\mathsf{NP}\) language that is equally sparse as the sparse variants of MCSP studied by previous work. Our results suggest that perhaps the most important properties of these specific problems studied by previous paper on HM are their sparsity.
+</p>
+</li>
+</ul>
+<h2><b>2. How close are we to use HM theorems to prove new lower bounds?</b></h2>
+<ul>
+<li><p>To derive breakthrough circuit lower bounds, most previous work on HM requires to prove either super cubic De Morgan formula lower bounds for sparse-MCSP, for which the best known lower bound is quadratic, or an \(n \cdot \mathrm{polylog}(n)\) size circuit lower bound for sparse-MCSP, which seems very hard given the current techniques based on gate elimination.
+</p>
+</li>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2020/065/" target=&ldquo;blank&rdquo;>[Chen-Jin-Williams&rsquo;20]</a></b>, we established several sharp thresholds for HM theorems. For example, we showed that sparse-MCSP cannot be computed by sub-quadratic size randomized De Morgan formulas while improving that to slightly super-quadratic would imply breakthrough lower bounds such as \(\mathsf{PSPACE} \not\subset \mathsf{NC}^1\).
+</p>
+</li>
+</ul>
+<h2><b>3. What prevents us from proving lower bounds required by the hardness magnification (HM) theorems?</b> </h2>
+<ul>
+<li><p>The natural proof barrier does not seem to apply here since HM theorems only work for special functions (<i>i.e.</i>, it avoids the largeness of natural properties). So one natural question stemmed from the hardness magnification phenomenon is to understand whether there is another inherent barrier, which prevents us from using current techniques to prove the lower bounds required by HM theorems.
+</p>
+</li>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2019/168/" target=&ldquo;blank&rdquo;>[Chen-Hirahara-Oliveira-Pich-Rajgopal-Santhanam&rsquo;20]</a></b>, we formulated a concrete barrier called <i>Locality barrier</i>. Roughly speaking, the locality barrier says that if your lower-bound methods are robust enough to handle small-fan-in oracles, then it cannot be used to prove the lower bounds required by most HM theorems. Unfortunately, most lower-bound techniques that we are aware of (random restrictions, approximation method, communication complexity, etc.) are subject to this barrier.
+</p>
+</li>
+<li><p>It is worth mentioning that there are subsequent work <a href="https://users.ox.ac.uk/~coml0742/papers/satclbt.pdf" target=&ldquo;blank&rdquo;>[Pich&rsquo;20]</a> and <a href="https://drops.dagstuhl.de/opus/volltexte/2020/12572/pdf/LIPIcs-CCC-2020-20.pdf" target=&ldquo;blank&rdquo;>[Hirahara&rsquo;20]</a> proving new HM theorems that bypass the locality barrier. It is an interesting question to understand whether these new HM theorems can lead to breakthrough circuit lower bounds, or some different barriers still prevent us from applying them.
+</p>
+</li>
+</ul>
+<h2><b>4. How close are we to prove super-polynomial \(\mathsf{TC}^{0}\) Lower Bounds?</b> </h2>
+<ul>
+<li><p>One frontier question in circuit complexity is to prove super-polynomial lower bounds against \(\mathsf{TC}^0\) circuits (constant-depth circuits consist entirely of majority gates). \(n^{1+1/\exp(d)}\)-size lower bounds are known for a certain \(\mathsf{NC}^1\)-complete problem \(P_{\mathsf{NC}^1}\) against depth-\(d\) \(\mathsf{TC}^0\) circuits <a href="https://dl.acm.org/doi/10.1137/S0097539792282965" target=&ldquo;blank&rdquo;>[Impagliazzo-Paturi-Saks&rsquo;97]</a>. <a href="https://dl.acm.org/doi/10.1145/1706591.1706594" target=&ldquo;blank&rdquo;>[Allender-Koucký&rsquo;10]</a> proved that for \(P_{\mathsf{NC}^1}\), if one can show \(n^{1+1/d}\)-size lower bounds against depth-\(d\) \(\mathsf{TC}^0\) circuits, then \(\mathsf{NC}^1 \ne \mathsf{TC}^0\). 
+</p>
+</li>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2018/199/" target=&ldquo;blank&rdquo;>[Chen-Tell&rsquo;19]</a></b>, we showed that any \(n^{1+1/\exp(o(d))}\)-size lower bound for \(P_{\mathsf{NC}^1}\) against depth-\(d\) \(\mathsf{TC}^0\) circuits would already imply \(\mathsf{NC}^1 \ne \mathsf{TC}^0\). That is, qualitatively we are very close to the threshold between <i>barely-super-linear</i> hardness and <i>super-polynomial</i> hardness against \(\mathsf{TC}^0\).</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-09-02 02:57:28 PDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+(<a href="project-hm.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

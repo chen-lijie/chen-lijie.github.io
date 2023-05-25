@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Algorithmic Method for Proving Circuit Lower Bounds</title>
+        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
+        </script>
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          showProcessingMessages: false,
+          TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+          function toggle(pId) {
+            var e=document.getElementById(pId);
+            if (!e) return;
+            if (e.style.display == "none") {
+              e.style.display = "block"
+            } else {
+              e.style.display = "none"
+            }
+            return;
+          }
+        </script>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-31107207-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="papersYear.html">Publications&nbsp;(by&nbsp;Years)</a></div>
+<div class="menu-item"><a href="papersCat.html">Publications&nbsp;(by&nbsp;Categories)</a></div>
+<div class="menu-item"><a href="aboutme.html">About&nbsp;Me</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Algorithmic Method for Proving Circuit Lower Bounds</h1>
+</div>
+<p>Proving circuit lower bounds is one of the most challenging questions in complexity theory. It is deeply connected to many fundamental questions such as \(\mathsf{P}\) vs. \(\mathsf{NP}\) and derandomization. However, after much progress in the 1980s, there has been a hiatus in new circuit lower bounds for decades. In particular, we did not have any non-trivial super-polynomial lower bounds against the frontier circuit class \(\mathsf{ACC^0}\) (which is the class of constant-depth circuits consisting of unbounded fan-in \(\mathsf{AND}\), \(\mathsf{OR}\) and \(\mathsf{MOD}[m]\) gates for a constant \(m\)).
+</p>
+<p>A decade ago, Williams <a href="https://dl.acm.org/doi/10.1145/2559903" target=&ldquo;blank&rdquo;>[Wil&rsquo;11]</a> proved that \(\mathsf{NEXP} \not\subset \mathsf{ACC}^0\) by introducing the <b>algorithmic method</b> <a href="https://epubs.siam.org/doi/10.1137/10080703X?mobileUi=0" target=&ldquo;blank&rdquo;>[Wil&rsquo;10]</a>, which connects algorithm design to circuit lower bounds. The most notable part of this approach is it avoids all previous barriers for proving circuit lower bounds and puts together nearly every gem in complexity theory, ranging from time hierarchy theorem to \(\mathsf{IP} = \mathsf{PSPACE}\). Building on <a href="https://dl.acm.org/doi/10.1145/2559903" target=&ldquo;blank&rdquo;>[Wil&rsquo;11]</a>, a recent breakthrough <a href="https://eccc.weizmann.ac.il/report/2017/188/" target=&ldquo;blank&rdquo;>[MW&rsquo;18]</a> by Murray and Williams significantly improved the state-of-the-art lower bounds for \(\mathsf{ACC}^0\) by showing \(\mathsf{NTIME}[n^{\mathrm{polylog}(n)}] \not\subset \mathsf{ACC}^0\).
+</p>
+<p>Some of my papers (<a href="https://eccc.weizmann.ac.il/report/2019/031/" target=&ldquo;blank&rdquo;>[Chen&rsquo;19]</a>, <a href="https://eccc.weizmann.ac.il/report/2020/010/" target=&ldquo;blank&rdquo;>[Chen-Ren&rsquo;20]</a>, <a href="https://eccc.weizmann.ac.il/report/2020/150/" target=&ldquo;blank&rdquo;>[Chen-Lyu-Williams&rsquo;20]</a>, <a href="https://eccc.weizmann.ac.il/report/2020/150/" target=&ldquo;blank&rdquo;>[Chen-Lyu&rsquo;21]</a>, <a href="http://www.mit.edu/~lijieche/FOCS_2019_rigidmatrix.pdf" target=&ldquo;blank&rdquo;>[Alman-Chen&rsquo;19]</a>, <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=10841" target=&ldquo;blank&rdquo;>[Chen-Williams&rsquo;19]</a>) are devoted to obtaining stronger circuit lower bounds using the algorithmic method. They are summarized below.
+</p>
+<h2>1. Average-Case Circuit Lower Bounds from Algorithmic Method</h2>
+<ul>
+<li><p>Most previous work using the algorithmic method can only achieve <i>worst-case</i> lower bounds, although average-case lower bounds (w.r.t. uniform distribution) have more applications, including constructions of pseudorandom generators. In <a href="https://eccc.weizmann.ac.il/report/2017/173/" target=&ldquo;blank&rdquo;>[R.Chen-Oliveira-Santhanam&rsquo;18]</a>, R.Chen, Oliveira, and Santhanam took the first step in that direction and proved that \(\mathsf{NEXP}\) cannot be \(1/2 + 1/\mathrm{polylog}(n)\)-approximated by poly-size \(\mathsf{ACC}^0\).
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2019/031/" target=&ldquo;blank&rdquo;>[Chen&rsquo;19]</a></b>, I proved that \(\mathsf{NTIME}[n^{\mathrm{polylog}(n)}]\) cannot be \(1/2 + 1/\mathrm{polylog}(n)\)-approximated by poly-size \(\mathsf{ACC}^0\), improving on both of <a href="https://eccc.weizmann.ac.il/report/2017/173/" target=&ldquo;blank&rdquo;>[R.Chen-Oliveira-Santhanam&rsquo;18]</a> and <a href="https://eccc.weizmann.ac.il/report/2017/188/" target=&ldquo;blank&rdquo;>[Murray-Williams&rsquo;18]</a>. 
+</p>
+</li>
+</ul>
+<ul>
+<li><p>The immediate question left open in <a href="https://eccc.weizmann.ac.il/report/2019/031/" target=&ldquo;blank&rdquo;>[Chen&rsquo;19]</a> is whether the inapproximability ratio of \(1/2 + 1/\mathrm{polylog}(n)\) can be further improved to \(1/2 + 1/n^{k}\) for every \(k\). <b>In <a href="https://eccc.weizmann.ac.il/report/2020/010/" target=&ldquo;blank&rdquo;>[Chen-Ren&rsquo;20]</a></b>, building crucially on <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=10841" target=&ldquo;blank&rdquo;>[Chen-Williams&rsquo;19]</a> and <a href="https://eccc.weizmann.ac.il/report/2019/031/" target=&ldquo;blank&rdquo;>[Chen&rsquo;19]</a>, Hanlin Ren and I did just that by proving that \(\mathsf{NTIME}[n^{\mathrm{polylog}(n)}]\) cannot be \(1/2 + 1/n^k\)-approximated by poly-size \(\mathsf{ACC}^0\), for every constant \(k\).<br />
+This is the <b>first</b> strong average-case lower bounds (\(1/2+n^{-k}\) for every \(k\)) against even the \(\mathsf{AC}^0[\oplus]\) circuits (or even \(\log n\)-degree \(\mathbb{F}_2\)-polynomials). Prior to our work, it was even unknown that whether \(\mathsf{E}^{\mathsf{NP}}\) can be \((1/2+1/\sqrt{n})\)-approximated by poly-size \(\mathsf{AC}^0[\oplus]\) circuits (or \(\log n\)-degree \(\mathbb{F}_2\)-polynomials).<br />
+In a concurrent work, <a href="https://eccc.weizmann.ac.il/report/2020/015/" target=&ldquo;blank&rdquo;>[Viola&rsquo;20]</a> proved that \(\mathsf{E}^{\mathsf{NP}}\) cannot be \((1/2+n^{-1+\Omega(1)})\)-approximated by \(2^{n^{o(1)}}\)-size \(\mathsf{AC^0}[\oplus]\) circuits.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>The lower bound in <a href="https://eccc.weizmann.ac.il/report/2020/010/" target=&ldquo;blank&rdquo;>[Chen-Ren&rsquo;20]</a> is only super polynomial, and an open question was whether one can show strong average-case lower bounds against <i>sub-exponential-size</i> \(\mathsf{ACC}^0\) circuits. <b>In <a href="https://eccc.weizmann.ac.il/report/2020/150/" target=&ldquo;blank&rdquo;>[Chen-Lyu-Williams&rsquo;20]</a></b>, Xin Lyu, Ryan Williams, and I proved that \(\mathsf{E}^{\mathsf{NP}}\) cannot be \(1/2+1/2^{n^{o(1)}}\)-approximated by \(2^{n^{o(1)}}\)-size \(\mathsf{ACC}^0\) circuits. Note that this is incomparable with <a href="https://eccc.weizmann.ac.il/report/2020/010/" target=&ldquo;blank&rdquo;>[Chen-Ren&rsquo;20]</a>, as we are now considering the complexity class \(\mathsf{E}^{\mathsf{NP}}\), which is much bigger than \(\mathsf{NTIME}[n^{\mathrm{polylog}(n)}]\).<br />
+In <a href="https://eccc.weizmann.ac.il/report/2020/150/" target=&ldquo;blank&rdquo;>[Chen-Lyu-Williams&rsquo;20]</a>, we also proved that \(\mathsf{E}^{\mathsf{NP}}\) cannot be \(\left(1/2 + 1/2^{n^{o(1)}}\right)\)-approximated by \(n^{1/2-\varepsilon}\)-degree \(\mathbb{F}_2\)-polynomials, for every \(\varepsilon &gt; 0\).
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2020/150/" target=&ldquo;blank&rdquo;>[Chen-Lyu&rsquo;21]</a></b>, Xin Lyu and I improved the correlation bound above by showing that \(\mathsf{E}^{\mathsf{NP}}\) cannot be \(\left(1/2 + 1/2^{d}\right)\)-approximated by degree-\(d\) \(\mathbb{F}_2\)-polynomials, for \(d = \sqrt{n/\log n}\). <br />
+We also observed that improving the parameter \(d\) mentioned above to even \(n^{1/2+\varepsilon}\) would imply breakthrough new circuit lower bounds (\(2^{n^{1/2+\varepsilon}}\)) against depth-\(3\) \(\mathsf{AC}^0\) circuits.
+</p>
+</li>
+</ul>
+<h2>2. Construction of Rigid Matrices using Algorithmic Method</h2>
+<ul>
+<li><p>A rigid matrix is a matrix with a high hamming distance from all low-rank matrices. It is a long-standing open question to give explicit constructions of rigid matrices with strong enough parameters. The question of constructing rigid matrices can also be interpreted as the question of proving average-case lower bounds against low-rank matrices.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>In <a href="http://www.mit.edu/~lijieche/FOCS_2019_rigidmatrix.pdf" target=&ldquo;blank&rdquo;>[Alman-Chen&rsquo;19]</a></b>, Josh Alman and I gave a semi-explicit construction of rigid matrices in a particular regime of parameters, for which no non-trivial constructions were known before. <br />Formally, we constructed a \(\mathsf{P}^{\mathsf{NP}}\) machine \(M\) such that for <i>infinite many</i> integer \(n\), \(M(1^n)\) outputs an \(n \times n\) matrix which has \(\Omega(n^2)\) hamming distance to all matrices with rank at most \(2^{(\log n)^{1/4-\varepsilon}}\) over \(\mathbb{F}_2\), for some \(\varepsilon &gt; 0\). This work is a surprising instantiation of the algorithmic method in a very non-standard computational model (low-rank matrices are very different from usual circuits).
+</p>
+</li>
+<li><p>In a follow-up work <a href="https://eccc.weizmann.ac.il/report/2020/075/" target=&ldquo;blank&rdquo;>[Bhangale-Harsha-Paradise-Tal&rsquo;20]</a>, Amey Bhangale, Prahladh Harsha, Orr Paradise, and Avishay Tal significantly improved (and simplified) our construction. In particular, they improved the rank parameter from \(2^{(\log n)^{1/4-\varepsilon}}\) to \(2^{\log n / \Omega(\log \log n)}\), which is extremely close to a polynomial rank.
+</p>
+</li>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2020/150/" target=&ldquo;blank&rdquo;>[Chen-Lyu-Williams&rsquo;20]</a></b>, we managed to improve the above construction from infinite-often to almost-everywhere. That is, building on <a href="https://eccc.weizmann.ac.il/report/2020/075/" target=&ldquo;blank&rdquo;>[Bhangale-Harsha-Paradise-Tal&rsquo;20]</a>, we constructed a \(\mathsf{P}^{\mathsf{NP}}\) machine \(M\) such that for <i>all large enough</i> integer \(n\), \(M(1^n)\) outputs an \(n \times n\) matrix which has \(\Omega(n^2)\) hamming distance to all matrices with rank at most \(2^{\log n/\Omega(\log\log n)}\).
+</p>
+</li>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2020/150/" target=&ldquo;blank&rdquo;>[Chen-Lyu&rsquo;21]</a></b>, we further improve the hamming distance parameter above from just \(\Omega(n^2)\) to \((1/2 - o(1)) \cdot n^2\). We also obtained a rigidity-rank trade-off.<br />
+A concurrent work by <a href="https://www.ccs.neu.edu/home/viola/papers/Huang-Viola-average-case-rigidity.pdf" target=&ldquo;blank&rdquo;>[Huang-Viola&rsquo;21]</a> also improved the hamming distance parameter, with a worse rigidity-rank trade-off than us.
+</p>
+</li>
+</ul>
+<h2>3. Almost-Everywhere Circuit Lower Bounds via Algorithmic Method</h2>
+<ul>
+<li><p>All previous lower bounds proved via the algorithmic method are <i>infinitely-often</i>. That is, for a specific hard function \(f\), they only guarantee that \(f\) is hard on <i>infinitely many</i> input lengths. Ideally, one would want \(f\) to be hard on <i>all sufficiently large</i> input lengths. There are attempts to addresses this issue, in <a href="http://people.cs.uchicago.edu/~fortnow/papers/robust.pdf" target=&ldquo;blank&rdquo;>Fortnow-Santhanam&rsquo;11</a>, an intermediate notion called <i>significant separation</i> was introduced, and it is showed that \(\mathsf{NEXP} \not\subset \mathsf{ACC}^0\) can be made to a significant separation.
+</p>
+</li>
+<li><p><b>In <a href="https://eccc.weizmann.ac.il/report/2020/150/" target=&ldquo;blank&rdquo;>[Chen-Lyu-Williams&rsquo;20]</a></b>, we proved \(\mathsf{E}^{\mathsf{NP}} \not\subset i.o.\textrm{-}\mathsf{ACC}^0\), which is the first <i>almost-everywhere</i> separation proved via the algorithmic method. Our framework can also be used to extend several other known infinite-often lower bounds to almost-everywhere lower bounds. Besides the construction of rigid matrices mentioned above, we also proved that there is a function \(f \in \mathsf{E}^{\mathsf{NP}}\) which cannot be \(1/2+1/2^{n^{o(1)}}\)-approximated by \(2^{n^{o(1)}}\)-size \(\mathsf{ACC}^0\) circuits, on all sufficiently large input lengths.
+</p>
+</li>
+</ul>
+<h2>4. Tighter Connections between Circuit-Analysis Algorithms and Circuit Lower Bounds</h2>
+<ul>
+<li><p>In previous work on the circuit-analysis-algorithms-to-circuit-lower-bounds connection, to prove a lower bound for \(\mathcal{C}\) circuits, one usually has to design algorithms for \(\widetilde{\mathcal{C}}\) circuits, where \(\widetilde{\mathcal{C}}\) is a circuit class larger than \(\mathcal{C}\).
+</p>
+</li>
+<li><p><b>In <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=10841" target=&ldquo;blank&rdquo;>[Chen-Williams&rsquo;19]</a></b>, we drew a connection from <a href="https://people.seas.harvard.edu/~salil/research/shortPCP.pdf" target=&ldquo;blank&rdquo;>PCP of Proximity (PCPP)</a>, and showed a tighter connection between circuit-analysis algorithms and circuit lower bounds: To prove lower bounds for \(\mathcal{C}\) circuits, it suffices to start from a non-trivial derandomization of an XOR (AND or OR also suffice) of two \(\mathcal{C}\) circuits. The PCPP based techniques in this paper turned out to be very useful in subsequent work.</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-09-02 02:57:28 PDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+(<a href="project-algo-method.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

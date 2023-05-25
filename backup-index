@@ -1,0 +1,14 @@
+- *Majority vs. Approximate Linear Sum and average-case complexity below NC1* [https://eccc.weizmann.ac.il/report/2021/040/ \[eccc\]] [MAJ-apxSUM-dagstuhl.ppsx \[slides by Igor\]] [https://www.youtube.com/watch?v=3sA1lfwfHO8 \[video by Xin\]] {{<span class="title" onclick="toggle('summary-appxsum-2')" style="cursor:pointer; u:hover">
+<font color=red>
+[short highlight]
+</font>
+</span><br>
+<span id="summary-appxsum-2" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+For any circuit class $\mathcal{C}$ contained in $\mathsf{NC}^1$, (among many other things) we show the following:
+<br><br><b> Average-Case hardness w.r.t. certain distributions $\Leftrightarrow$ Average-Case hardness w.r.t. the uniform distribution: </b> 
+If $E$ is $\delta$-average-case hard against $\mathcal{C}$ w.r.t. to some distribution $\mathcal{D}$, then $E$ is also $\delta$-average-case hard against $\mathcal{C}$ under the uniform distribution.
+<br><br><b> Generic seed-reduction for PRGs: </b> 
+If there is an $(n-1)$-seed PRG fooling $\mathcal{C}$ with error $n^{-\omega(1)}$, then there is an $n^{o(1)}$-seed PRG fooling $\mathcal{C}$ with error $n^{-\omega(1)}$.
+</span>}}
+Lijie Chen, Zhenjian Lu, Xin Lyu, Igor Oliveira\n
+/International Colloquium on Automata, Languages and Programming/ (ICALP), 2021 \n

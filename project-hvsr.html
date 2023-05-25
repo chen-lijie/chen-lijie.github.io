@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Hardness vs. Randomness: Superfast and Non-Black-Box</title>
+        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
+        </script>
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          showProcessingMessages: false,
+          TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+          function toggle(pId) {
+            var e=document.getElementById(pId);
+            if (!e) return;
+            if (e.style.display == "none") {
+              e.style.display = "block"
+            } else {
+              e.style.display = "none"
+            }
+            return;
+          }
+        </script>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-31107207-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="papersYear.html">Publications&nbsp;(by&nbsp;Years)</a></div>
+<div class="menu-item"><a href="papersCat.html">Publications&nbsp;(by&nbsp;Categories)</a></div>
+<div class="menu-item"><a href="aboutme.html">About&nbsp;Me</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Hardness vs. Randomness: Superfast and Non-Black-Box</h1>
+</div>
+<p>The classic hardness-to-randomness paradigm ([<a href="https://ieeexplore.ieee.org/document/4568378" target=&ldquo;blank&rdquo;>Yao&rsquo;82</a>,<a href="https://ieeexplore.ieee.org/document/4568382" target=&ldquo;blank&rdquo;>Blum-Micali&rsquo;84</a>,<a href="https://ieeexplore.ieee.org/document/21916" target=&ldquo;blank&rdquo;>Nisan-Wigderson&rsquo;94</a>,<a href="https://dl.acm.org/doi/10.1145/258533.258590" target=&ldquo;blank&rdquo;>Impagliazzo-Wigderson&rsquo;97</a>,<a href="https://ieeexplore.ieee.org/document/743524" target=&ldquo;blank&rdquo;>Impagliazzo-Wigderson&rsquo;98</a>]) shows that derandomization results (such as \(\mathsf{P} = \mathsf{BPP}\)) can be derived from hardness assumptions (such as \(\mathsf{E} = \mathsf{TIME}[2^{O(n)}] \not\subset i.o.\textrm{-}\mathsf{SIZE}[2^{o(n)}]\)). Some of my past papers (<a href="https://eccc.weizmann.ac.il/report/2020/148/" target=&ldquo;blank&rdquo;>[Chen-Tell&rsquo;21a]</a>, <a href="https://eccc.weizmann.ac.il/report/2021/080/" target=&ldquo;blank&rdquo;>[Chen-Tell&rsquo;21b]</a>) are motivated by the following two fundamental questions regarding derandomization. 
+</p>
+<p>1. What is the fastest derandomization?
+</p>
+<p>2. What is the minimum hardness assumption for derandomization?
+</p>
+<h2>1. What is the optimal derandomization from plausible hardness assumptions?</h2>
+<ul>
+<li><p><b>Background.</b> The classic line of work shows that exponential circuit lower bounds imply \(\mathsf{P} = \mathsf{BPP}\). However the polynomial overhead could be huge. A quick caculation shows that even starting from \(\mathsf{TIME}[2^n] \not\subset i.o.\textrm{-}\mathsf{SIZE}[2^{0.99 \cdot n)}]\), one can only derandomize \(\mathsf{BPTIME}[T(n)]\) in at least \(\mathsf{TIME}[T(n)^c]\) time for a constant \(c \ge 7\), based on [<a href="https://dl.acm.org/doi/10.1145/258533.258590" target=&ldquo;blank&rdquo;>Impagliazzo-Wigderson&rsquo;97</a>].<br />
+In an exciting recent work, under hardness assumptions against non-uniform Merlin-Arthur protocols, <a href="https://eccc.weizmann.ac.il/report/2019/099/" target=&ldquo;blank&rdquo;>[Doron-Moshkovitz-Oh-Zuckerman&rsquo;20]</a> showed that \(\mathsf{BPTIME}[T(n)] \subset \mathsf{TIME}[T(n)^2]\). 
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Near-optimal worst-case derandomization of \(\mathsf{BPTIME}[T(n)]\).</b> An immeidate question following <a href="https://eccc.weizmann.ac.il/report/2019/099/" target=&ldquo;blank&rdquo;>[DMOZ&rsquo;20]</a> is whether one can further improve the quadratic blow-up in their work. <b>In <a href="https://eccc.weizmann.ac.il/report/2020/148/" target=&ldquo;blank&rdquo;>[Chen-Tell&rsquo;21a]</a></b>, we proved that under the standard assumption that OWFs exist, together with a <b>nesseary</b> assumption against deterministic algorithms with advice, \(\mathsf{BPTIME}[T(n)] \subset \mathsf{TIME}[T(n) \cdot n]\). Moreover, the overhead of \(n\) is <b>optimal</b> under the <a href="https://eccc.weizmann.ac.il//report/2015/148/" target=&ldquo;blank&rdquo;>Nondeterministic Strong Exponential-Time Hypothesis (NSETH)</a>.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Randomness is indistinguishable from useless.</b> Given this negative result under NSETH, it appears hard (or impossible) to further improve the overhead of \(n\) above (since it would refute NSETH). One way to get around this barrier is to weaken the correctness requirement of derandomization slightly.<br />
+<b>In <a href="https://eccc.weizmann.ac.il/report/2021/080/" target=&ldquo;blank&rdquo;>[Chen-Tell&rsquo;21b]</a></b>, we show that under plausible hardness assumptions, one can derandomize a \(T(n)\)-time randomized algorithm \(A\) to obtain a \(T(n) \cdot n^{o(1)}\)-time deterministic algorithm \(B\), such that <i>no poly-time uniform adversary \(S\) can find a mistake (an input \(x\) such that \(A(x) \ne B(x)\)) with non-negligible probability</i>. In other words, this derandomization is <b>indistinguishable from being correct and has very small overhead</b>. Arguably, such derandomization already suffices for many practical applications.<br />
+<b>PRGs are not enough.</b> Surprisingly, due to its black-box nature, one can show that no PRGs can give us the small overhead derandomization mentioned above. In fact, we rely on a non-black-box approach based on <i>targeted PRGs</i> to achieve this strong derandomization. See Section 3 for more details.
+</p>
+</li>
+</ul>
+<h2>2. What is the minimum hardness assumption for showing \(\mathsf{prP} = \mathsf{prBPP}\)?</h2>
+<ul>
+<li><p><b>Background.</b> Classic work shows that circuit lower bounds for \(\mathsf{E} = \mathsf{TIME}[2^{O(n)}]\) is equivalent to the existence of pseudorandom generators (PRGs) for \(\mathsf{P}_{/\mathsf{poly}}\) (a.k.a. black-box derandomization). However, it is not clear whether those circuit lower bounds are also <i>necessary</i> for derandomization, since an approach for derandomization can be white-box (in the sense that the derandomization algorithm can heavily exploit the structure of the given input circuit).
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Derandomization from new hardness assumptions.</b> <b>In <a href="https://eccc.weizmann.ac.il/report/2021/080/" target=&ldquo;blank&rdquo;>[Chen-Tell&rsquo;21b]</a></b>, we introduce a new type of hardness assumption, <b>almost-all-input hardness against uniform probabilistic algorithms</b>, and show that such assumptions are both sufficient and necessary for \(\mathsf{prP} = \mathsf{prBPP}\). In other words, this new type of assumption could be the <i>right</i> assumption for derandomization.
+</p>
+</li>
+</ul>
+<h2>3. A new hardness vs. randomness framework based on targeted PRGs</h2>
+<ul>
+<li><p><b>PRGs vs. Targeted PRGs.</b> A targeted PRG (introduced by <a href="https://link.springer.com/chapter/10.1007/978-3-642-22670-0_20" target=&ldquo;blank&rdquo;>[Goldreich&rsquo;11]</a>) \(G\) gets a circuit \(C\) with \(n\)-bit inputs and a short seed of length \(s\), such that its output distribution \(G(C,U_s)\) and the uniform distribution \(U_n\) are indistinguishable by \(C\). In particular, unlike PRGs, the targeted PRGs are <i>white-box derandomization</i> in the sense that its outputs can depend on the input circuit \(C\).
+</p>
+</li>
+<li><p><b>A general framework for constructing targeted PRGs/HSGs.</b> The main conceptual contribution of <a href="https://eccc.weizmann.ac.il/report/2021/080/" target=&ldquo;blank&rdquo;>[Chen-Tell&rsquo;21b]</a> is a general framework for constructing targeted PRGs (or HSGs) from a new type of hardness assumption. This new framework helps us to obtain both a faster derandomization (see &ldquo;randomness is indistinguishable from useless&rdquo; part in Section 1) and new hardness assumptions for \(\mathsf{prP} = \mathsf{prBPP}\) (see Section 2). We believe this new framework will find other applications in complexity theory or TCS in general.<br />
+Our construction crucially builds on the doubly efficient proof system of <a href="https://dl.acm.org/doi/pdf/10.1145/2699436" target=&ldquo;blank&rdquo;>[Goldwasser, Kalai, and Rothblum&rsquo;15]</a>. Very roughly speaking, the targeted PRGs are constructed from the honest prover strategy function when running the GKR protocol on the given input circuit.</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-09-02 02:57:28 PDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+(<a href="project-hvsr.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
