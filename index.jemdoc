@@ -12,7 +12,7 @@ I am a Miller Postdoctoral Fellow at UC Berkeley, hosted by [https://www.avishay
 
 At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jianli/ Jian Li], working on [papersCat.html\#MAB /Multi-Armed Bandits/]. During the Spring of 2016, I was visiting MIT, working under the supervision of Prof. [https://www.scottaaronson.com/ Scott Aaronson] on [papersCat.html\#quantum /Quantum Complexity/]. [CV.pdf \[CV\]]
 
-I was visiting [https://simons.berkeley.edu/ Simons Institute] in the Fall of 2018, and I was a research fellow at Simons for the [https://simons.berkeley.edu/programs/Meta-Complexity2023 \[Meta Complexity Program\]].
+I was visiting [https://simons.berkeley.edu/ Simons Institute] in the Fall of 2018, and I was a research fellow at Simons for the [https://simons.berkeley.edu/programs/Meta-Complexity2023 \[Meta Complexity Program\]] in the Spring of 2023.
 
 [https://twitter.com/wjmzbmr1 Twitter]
 
@@ -25,7 +25,9 @@ I was visiting [https://simons.berkeley.edu/ Simons Institute] in the Fall of 20
 
 == *Video\/Slides\/Summary of Recent Work*
 
-- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]]\n
+- *Guest Column: New ways of studying the BPP= P conjecture* [https://dl.acm.org/doi/abs/10.1145/3604943.3604950 \[article\]]
+
+- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[quanta\]]\n
 
 - *FOCS22 workshop organized by Roei Tell and myself*: [https://sites.google.com/view/newdirectionsinderand2022 \[site\]]
 
@@ -74,7 +76,11 @@ Textbook hardness-to-randomness converts circuit lower bounds into PRGs. But is 
 
 === *Derandomization*
 
+- *Derandomization vs Refutation: A Unified Framework for Characterizing Derandomization* [https://eccc.weizmann.ac.il/report/2023/105/ \[eccc\]]\n
+Lijie Chen, Roei Tell, Ryan Williams. /Foundations of Computer Science/ (FOCS 2023)\n
+
 - *When Arthur has Neither Random Coins nor Time to Spare: Superfast Derandomization of Proof Systems* [https://eccc.weizmann.ac.il/report/2022/057/ \[eccc\]] [https://drive.google.com/file/d/1R-4NO-yIMT_KBO5iel3LnTimnaQq6Eyt/view \[Roei's slides\]]\n
+Lijie Chen, Roei Tell. /Symposium on the Theory of Computing/ (STOC 2023)\n
 
 - *Unstructured Hardness to Average-Case Randomness* [https://eccc.weizmann.ac.il/report/2022/097/ \[eccc\]] [https://drive.google.com/file/d/1fOkEXCfZFgcwMUzFDX5-nE0TVezQBbZ8/view \[Roei's slides\]]\n
 Lijie Chen, Ron D. Rothblum, Roei Tell. /Foundations of Computer Science/ (FOCS 2022)\n
@@ -177,6 +183,9 @@ For some natural $\mathsf{NC}^1$-complete problem $P$, we show that (among many 
 Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]. /Symposium on the Theory of Computing/ (STOC 2019). {{<font color=red>}}Danny Lewin Best Student Paper Award{{</font>}}\n 
 
 === *Other Topics*
+
+- (Explicit Construction) *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[quanta\]]\n
+Lijie Chen, Zhenjian Lu, Igor C. Oliveira, Hanlin Ren, Rahul Santhanam. /Foundations of Computer Science/ (FOCS 2023)\n
 
 - (Quantum Supremacy) *Complexity-Theoretic Foundations of Quantum Supremacy Experiments* [http://eccc.hpi-web.de/report/2016/200/ \[eccc\]] [https://arxiv.org/abs/1612.05903 \[arxiv\]] [CCC_2017_QuantumSupremacy.pdf \[slides\]]\n
 [https://www.scottaaronson.com/ Scott Aaronson], Lijie Chen. /Computational Complexity Conference/ (CCC 2017). {{<font color=red>}}Invited to the Toc Special Issue for CCC 2017{{</font>}}\n

@@ -6,12 +6,12 @@
 == 2023
 
 
-- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]]\n
+- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[quanta\]]\n
 Lijie Chen, Zhenjian Lu, Igor C. Oliveira, Hanlin Ren, Rahul Santhanam\n
 /Foundations of Computer Science/ (FOCS 2023)\n
 
 
-- *Derandomization vs Refutation: A Unified Framework for Characterizing Derandomization*\n
+- *Derandomization vs Refutation: A Unified Framework for Characterizing Derandomization* [https://eccc.weizmann.ac.il/report/2023/105/ \[eccc\]]\n
 Lijie Chen, Roei Tell, Ryan Williams \n
 /Foundations of Computer Science/ (FOCS 2023)\n
 
