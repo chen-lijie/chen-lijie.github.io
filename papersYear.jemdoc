@@ -3,10 +3,16 @@
 
 [https://scholar.google.com/citations?user=T_OhvOsAAAAJ&hl=en Google Scholar Page]
 
+== 2024
+
+- *Symmetric Exponential Time Requires Near-Maximum Circuit Size* [https://eccc.weizmann.ac.il/report/2023/144/ \[eccc\]] [https://arxiv.org/abs/2309.12912 \[arxiv\]] [https://www.youtube.com/watch?v=uxyN2eVYKic \[Hanlin's talk at IAS\]] [Sigma2-CKT-LOWB.pptx \[my slides\]]\n
+Lijie Chen, Shuichi Hirahara, Hanlin Ren\n
+/Symposium on the Theory of Computing/ (STOC 2024)\n
+
 == 2023
 
 
-- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[quanta\]]\n
+- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]]\n
 Lijie Chen, Zhenjian Lu, Igor C. Oliveira, Hanlin Ren, Rahul Santhanam\n
 /Foundations of Computer Science/ (FOCS 2023)\n
 
@@ -16,7 +22,7 @@ Lijie Chen, Roei Tell, Ryan Williams \n
 /Foundations of Computer Science/ (FOCS 2023)\n
 
 
-- *Weighted Pseudorandom Generators via Inverse Analysis of Random Walks and Shortcutting*\n
+- *Weighted Pseudorandom Generators via Inverse Analysis of Random Walks and Shortcutting* [https://eccc.weizmann.ac.il/report/2023/114/ \[eccc\]] [https://www.ias.edu/video/weighted-pseudorandom-generators-inverse-analysis-random-walks-and-shortcutting \[William's talk at IAS\]]\n
 Lijie Chen, William Hoza, Xin Lyu, Avishay Tal and Hongxun Wu\n
 /Foundations of Computer Science/ (FOCS 2023)\n
 

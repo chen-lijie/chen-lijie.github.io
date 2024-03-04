@@ -2,40 +2,37 @@
 = Lijie Chen 
 
 ~~~
-{}{img_left}{lijie.jpg}{Lijie Chen} 
+{}{img_left}{lijie.jpeg}{Lijie Chen} 
 ~~~
  
 *Research Interests*: /Theoretical Computer Science /\n\n I have a broad interest in theoretical computer science. 
   
 
-I am a Miller Postdoctoral Fellow at UC Berkeley, hosted by [https://www.avishaytal.org/ Avishay Tal]. I got my Ph.D. from MIT, and I was very fortunate to be advised by [https://people.csail.mit.edu/rrw/ Ryan Williams]. Prior to that, I received my bachelor's degree from [http://iiis.tsinghua.edu.cn/en/yaoclass/ Yao Class] at Tsinghua University.
+I am a Miller Postdoctoral Fellow at UC Berkeley, hosted by [https://www.avishaytal.org/ Avishay Tal] and [https://people.eecs.berkeley.edu/~vazirani/ Umesh V. Vazirani]. I got my Ph.D. from MIT, and I was very fortunate to be advised by [https://people.csail.mit.edu/rrw/ Ryan Williams]. Prior to that, I received my bachelor's degree from [http://iiis.tsinghua.edu.cn/en/yaoclass/ Yao Class] at Tsinghua University.
 
 At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jianli/ Jian Li], working on [papersCat.html\#MAB /Multi-Armed Bandits/]. During the Spring of 2016, I was visiting MIT, working under the supervision of Prof. [https://www.scottaaronson.com/ Scott Aaronson] on [papersCat.html\#quantum /Quantum Complexity/]. [CV.pdf \[CV\]]
 
-I was visiting [https://simons.berkeley.edu/ Simons Institute] in the Fall of 2018, and I was a research fellow at Simons for the [https://simons.berkeley.edu/programs/Meta-Complexity2023 \[Meta Complexity Program\]] in the Spring of 2023.
+I was visiting [https://simons.berkeley.edu/ Simons Institute] in the Fall of 2018, and I was a research fellow at Simons for the [https://simons.berkeley.edu/programs/Meta-Complexity2023 Meta Complexity Program]. I am currently a visiting scientist at Simons for [https://simons.berkeley.edu/programs/quantum-algorithms-complexity-fault-tolerance Quantum Algorithms, Complexity, and Fault Tolerance].
 
 [https://twitter.com/wjmzbmr1 Twitter]
 
 *Note*: Click on {{<font color=red size=+0.5><b>}}\[summary\]{{</b></font>}} or {{<font color=red size=+0.5><b>}}\[highlight\]{{</b></font>}} to view summaries or highlight of the papers/projects!
 
-=== Some of my projects:
-- [project-algo-method.html {{<font color=red size=+0.5><b>}}Algorithmic Method for Proving Circuit Lower Bounds{{</b></font>}}]
-- [project-hvsr.html {{<font color=red size=+0.5><b>}}Hardness vs. Randomness: Superfast and Non-Black-Box{{</b></font>}}]
-- [project-hm.html {{<font color=red size=+0.5><b>}}Hardness Magnification{{</b></font>}}]
-
 == *Video\/Slides\/Summary of Recent Work*
 
-- *Guest Column: New ways of studying the BPP= P conjecture* [https://dl.acm.org/doi/abs/10.1145/3604943.3604950 \[article\]]
+- *Symmetric Exponential Time Requires Near-Maximum Circuit Size* [https://eccc.weizmann.ac.il/report/2023/144/ \[eccc\]] [https://arxiv.org/abs/2309.12912 \[arxiv\]] [https://www.youtube.com/watch?v=uxyN2eVYKic \[Hanlin's talk at IAS\]] [Sigma2-CKT-LOWB.pptx \[my slides\]]\n
 
-- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[quanta\]]\n
+- *Weighted Pseudorandom Generators via Inverse Analysis of Random Walks and Shortcutting* [https://eccc.weizmann.ac.il/report/2023/114/ \[eccc\]] [https://www.ias.edu/video/weighted-pseudorandom-generators-inverse-analysis-random-walks-and-shortcutting \[William's talk at IAS\]]\n
 
-- *FOCS22 workshop organized by Roei Tell and myself*: [https://sites.google.com/view/newdirectionsinderand2022 \[site\]]
+- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[Quanta Magazine\]]\n
 
 - *My Ph.D. thesis!* [Lijie-Chen-thesis.pdf \[thesis\]]
 
-- *When Arthur has Neither Random Coins nor Time to Spare: Superfast Derandomization of Proof Systems* [https://eccc.weizmann.ac.il/report/2022/057/ \[eccc\]] [https://drive.google.com/file/d/1R-4NO-yIMT_KBO5iel3LnTimnaQq6Eyt/view \[Roei's slides\]]\n
+== *Workshops*
 
-- *Unstructured Hardness to Average-Case Randomness* [https://eccc.weizmann.ac.il/report/2022/097/ \[eccc\]] [https://drive.google.com/file/d/1fOkEXCfZFgcwMUzFDX5-nE0TVezQBbZ8/view \[Roei's slides\]]\n
+- *FOCS23 workshop on explicit construction organized by Igor C. Oliveira, Rahul Santhanam, and myself* [https://sites.google.com/view/focs23-explicit-constructions/home \[site\]]
+
+- *FOCS22 workshop on derandomization organized by Roei Tell and myself*: [https://sites.google.com/view/newdirectionsinderand2022 \[site\]]
 
 - *Recent Developments in Derandomization*, a two-part series presented together with Roei Tell at the [http://dimacs.rutgers.edu/events/details?eID=1083 DIMACS Workshop] on Meta-Complexity, Barriers, and Derandomization. [https://www.youtube.com/watch?v=H4VF7ttsyNA&t=2193s \[First talk by me\]] [https://www.youtube.com/watch?v=Nr5LcdLERkA \[Second talk by Roei\]]
 
@@ -51,39 +48,25 @@ The series is intended to survey the fast-paced recent developments in the study
 3. Optimal derandomization algorithms that incur essentially no runtime overhead (a.k.a "free lunch derandomization").
 </span>}}
 
-- *Truly Low-Space Element Distinctness and Subset Sum via Pseudorandom Hash Functions* [https://arxiv.org/abs/2111.01759 \[arxiv\]] [https://whxwhx.github.io/slides/ED.pdf \[Hongxun's slides\]] [ED-slides.pptx \[my slides\]] {{<span onclick="toggle('abstract-lowspace-ED')" style="cursor:pointer; u:hover; white-space:nowrap">
-<font color=red>
-[abstract]
-</font>
-</span><br>
-<span id="abstract-lowspace-ED" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
-We consider low-space algorithms for the classic Element Distinctness problem: given an array of $n$ input integers with $O(\log n)$ bit-length, decide whether or not all elements are pairwise distinct. 
-Beame, Clifford, and Machmouchi [FOCS 2013] gave an $\tilde O(n^{1.5})$-time randomized algorithm for Element Distinctness using only $O(\log n)$ bits of working space. However, their algorithm assumes a random oracle (in particular, read-only random access to polynomially many random bits), and it was asked as an open question whether this assumption can be removed.<br><br>
-In this paper, we positively answer this question by giving an $\tilde O(n^{1.5})$-time randomized algorithm using $O(\log ^3 n\log \log n)$ bits of space, with one-way access to random bits. As a corollary, we also obtain a $\textrm{poly}(n)$-space $O^*(2^{0.86n})$-time randomized algorithm for the Subset Sum problem, removing the random oracles required in the algorithm of Bansal, Garg, Nederlof, and Vyas [STOC 2017]. The main technique underlying our results is a pseudorandom hash family based on iterative restrictions, which can fool the cycle-finding procedure in the algorithms of Beame et al. and Bansal et al.
-</span>}}
 
-- *Hardness vs Randomness, Revised: Uniform, Non-Black-Box, and Instance-Wise* [https://eccc.weizmann.ac.il/report/2021/080/ \[eccc\]] [nonbb-derand-final.pptx \[slides by me\] ] [https://sites.google.com/site/roeitell/Publications?authuser=0 \[slides by Roei\] ] {{<span class="title" onclick="toggle('nonbb-derand')" style="cursor:pointer; u:hover">
-<font color=red>
-[short summary]
-</font>
-</span><br>
-<span id="nonbb-derand" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
-Textbook hardness-to-randomness converts circuit lower bounds into PRGs. But is this black-box approach really necessary for derandomization? In this new work we revamp the classical hardness-to-randomness framework, showing how to convert new types of <b>uniform lower bounds</b> into <b>non-black-box derandomization</b>, deducing conclusions such as promiseBPP = promiseP without PRGs. Moreover, we show that the same types of lower bounds are in fact <u>necessary</u> for any type of derandomization! This reveals a tight connection between any derandomization of promiseBPP (i.e., not necessarily a black-box one) and the foregoing new types of uniform lower bounds.
-<br><br>Our framework also allows a flexible trade-off between hardness and randomness. In an extreme setting, we show that plausible uniform lower bounds imply that "<b>randomness is indistinguishable from useless</b>". That is, every randomized algorithm can be derandomized with an arbitrarily small polynomial overhead, such that no polynomial-time algorithm can find a mistake with non-negligible probability.
-</span>}}
 
 == *Selected Publications*
 
 === *Derandomization*
 
+#- *When Arthur has Neither Random Coins nor Time to Spare: Superfast Derandomization of Proof Systems* [https://eccc.weizmann.ac.il/report/2022/057/ \[eccc\]] [https://drive.google.com/file/d/1R-4NO-yIMT_KBO5iel3LnTimnaQq6Eyt/view \[Roei's slides\]]\n
+
+#- *Unstructured Hardness to Average-Case Randomness* [https://eccc.weizmann.ac.il/report/2022/097/ \[eccc\]] [https://drive.google.com/file/d/1fOkEXCfZFgcwMUzFDX5-nE0TVezQBbZ8/view \[Roei's slides\]]\n
+# Lijie Chen, Ron D. Rothblum, Roei Tell. /Foundations of Computer Science/ (FOCS 2022)\n
+
+- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[Quanta Magazine\]]\n
+Lijie Chen, Zhenjian Lu, Igor C. Oliveira, Hanlin Ren, Rahul Santhanam\n
+/Foundations of Computer Science/ (FOCS 2023)\n
+
+
 - *Derandomization vs Refutation: A Unified Framework for Characterizing Derandomization* [https://eccc.weizmann.ac.il/report/2023/105/ \[eccc\]]\n
-Lijie Chen, Roei Tell, Ryan Williams. /Foundations of Computer Science/ (FOCS 2023)\n
-
-- *When Arthur has Neither Random Coins nor Time to Spare: Superfast Derandomization of Proof Systems* [https://eccc.weizmann.ac.il/report/2022/057/ \[eccc\]] [https://drive.google.com/file/d/1R-4NO-yIMT_KBO5iel3LnTimnaQq6Eyt/view \[Roei's slides\]]\n
-Lijie Chen, Roei Tell. /Symposium on the Theory of Computing/ (STOC 2023)\n
-
-- *Unstructured Hardness to Average-Case Randomness* [https://eccc.weizmann.ac.il/report/2022/097/ \[eccc\]] [https://drive.google.com/file/d/1fOkEXCfZFgcwMUzFDX5-nE0TVezQBbZ8/view \[Roei's slides\]]\n
-Lijie Chen, Ron D. Rothblum, Roei Tell. /Foundations of Computer Science/ (FOCS 2022)\n
+Lijie Chen, Roei Tell, Ryan Williams \n
+/Foundations of Computer Science/ (FOCS 2023)\n
 
 - *Hardness vs Randomness, Revised: Uniform, Non-Black-Box, and Instance-Wise* [https://eccc.weizmann.ac.il/report/2021/080/ \[eccc\]] [nonbb-derand-final.pptx \[slides\] ] [https://www.youtube.com/watch?v=v4xMEKAS07A \[Roei's talk at TCS plus\]] [https://drive.google.com/file/d/1L2z3USxzrIVpJbfFI1EyuZtyQ2BmYJSF/view \[Roei's slides\]] {{<span class="title" onclick="toggle('nonbb-derand')" style="cursor:pointer; u:hover">
 <font color=red>
@@ -118,6 +101,10 @@ Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]. /Symposium on t
 
 === *Circuit Lower Bounds from Algorithms*
 
+- *Symmetric Exponential Time Requires Near-Maximum Circuit Size* [https://eccc.weizmann.ac.il/report/2023/144/ \[eccc\]] [https://arxiv.org/abs/2309.12912 \[arxiv\]] [https://www.youtube.com/watch?v=uxyN2eVYKic \[Hanlin's talk at IAS\]] [Sigma2-CKT-LOWB.pptx \[my slides\]]\n
+Lijie Chen, Shuichi Hirahara, Hanlin Ren\n
+/Symposium on the Theory of Computing/ (STOC 2024)\n
+
 - *Almost Everywhere Circuit Lower Bounds from Non-Trivial Derandomization* [https://eccc.weizmann.ac.il/report/2020/150/ \[eccc\]] [https://www.youtube.com/watch?v=vpyoZdv--nw&list=PL3DbynX8gwfJLYrm4EoZn6aK7IAACiTKa&index=6 \[video by Xin Lyu in FOCS 2020\]] [Ryan-slides-ae-lowerbound.pdf \[slides by Ryan\]] {{<span class="title" onclick="toggle('summary-ae-lowb-2')" style="cursor:pointer; u:hover">
 <font color=red>
 [short highlight]
@@ -141,8 +128,8 @@ Lijie Chen, Xin Lyu, [https://people.csail.mit.edu/rrw/ Ryan Williams]. /Foundat
 Lijie Chen, [https://hanlin-ren.github.io/ Hanlin Ren]. /Symposium on the Theory of Computing/ (STOC 2020). {{<font color=red>}}Invited to the SICOMP Special Issue for STOC 2020{{</font>}}\n
 [https://epubs.siam.org/doi/pdf/10.1137/20M1364886 \[SIAM Journal on Computing\]]
 
-- *Non-deterministic Quasi-Polynomial Time is Average-case Hard for ACC Circuits* [Austin-NQP-Average-Case-Lower-Bound.pptx \[Talk at UT Austin's Theory Seminar\]] [https://eccc.weizmann.ac.il/report/2019/031/ \[eccc\]] [Che19-journal-version.pdf \[draft of journal version\]]\n
-Lijie Chen. /Foundations of Computer Science/ (FOCS 2019). {{<font color=red>}}Invited to the SICOMP Special Issue for FOCS 2019{{</font>}}\n
+# - *Non-deterministic Quasi-Polynomial Time is Average-case Hard for ACC Circuits* [Austin-NQP-Average-Case-Lower-Bound.pptx \[Talk at UT Austin's Theory Seminar\]] [https://eccc.weizmann.ac.il/report/2019/031/ \[eccc\]] [Che19-journal-version.pdf \[draft of journal version\]]\n
+# Lijie Chen. /Foundations of Computer Science/ (FOCS 2019). {{<font color=red>}}Invited to the SICOMP Special Issue for FOCS 2019{{</font>}}\n
 
 - *Efficient Construction of Rigid Matrices Using an NP Oracle* [FOCS_2019_rigidmatrix.pdf \[pdf\]] [FOCS_2019_rigidmatrix_slides.pptx \[slides\]] [http://www.wisdom.weizmann.ac.il/~oded/MC/281.html \[Oded's choice\]] {{<span class="title" onclick="toggle('summary-rigid-matrix')" style="cursor:pointer; u:hover">
 <font color=red>
@@ -183,9 +170,6 @@ For some natural $\mathsf{NC}^1$-complete problem $P$, we show that (among many 
 Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]. /Symposium on the Theory of Computing/ (STOC 2019). {{<font color=red>}}Danny Lewin Best Student Paper Award{{</font>}}\n 
 
 === *Other Topics*
-
-- (Explicit Construction) *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[quanta\]]\n
-Lijie Chen, Zhenjian Lu, Igor C. Oliveira, Hanlin Ren, Rahul Santhanam. /Foundations of Computer Science/ (FOCS 2023)\n
 
 - (Quantum Supremacy) *Complexity-Theoretic Foundations of Quantum Supremacy Experiments* [http://eccc.hpi-web.de/report/2016/200/ \[eccc\]] [https://arxiv.org/abs/1612.05903 \[arxiv\]] [CCC_2017_QuantumSupremacy.pdf \[slides\]]\n
 [https://www.scottaaronson.com/ Scott Aaronson], Lijie Chen. /Computational Complexity Conference/ (CCC 2017). {{<font color=red>}}Invited to the Toc Special Issue for CCC 2017{{</font>}}\n
