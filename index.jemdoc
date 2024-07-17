@@ -2,7 +2,7 @@
 = Lijie Chen 
 
 ~~~
-{}{img_left}{lijie-4.jpg}{Lijie Chen} 
+{}{img_left}{lijie-5.jpg}{Lijie Chen} 
 ~~~
  
 *Research Interests*: /Theoretical Computer Science /\n\n I have a broad interest in theoretical computer science. In particular, I am interested in classical and quantum computational complexity theory and their connections to other fields of computer science and quantum physics.
@@ -19,6 +19,8 @@ I am joining Berkeley EECS as an Assistant Professor in Fall 2025.
 *Note*: Click on {{<font color=red size=+0.5><b>}}\[summary\]{{</b></font>}} or {{<font color=red size=+0.5><b>}}\[highlight\]{{</b></font>}} to view summaries or highlight of the papers/projects!
 
 == *Video\/Slides\/Summary of Recent Work*
+
+- *Reverse mathematics of complexity lower bounds* [https://eccc.weizmann.ac.il/report/2024/060/ \[eccc\]] [https://www.dcs.warwick.ac.uk/~igorcarb/documents/slides/meta-mathematics-oberwolfach.ppsx \[Igor's slides\]] \n
 
 - *Symmetric Exponential Time Requires Near-Maximum Circuit Size* [https://eccc.weizmann.ac.il/report/2023/144/ \[eccc\]] [https://arxiv.org/abs/2309.12912 \[arxiv\]] [https://www.youtube.com/watch?v=uxyN2eVYKic \[Hanlin's talk at IAS\]] [Sigma2-CKT-LOWB.pptx \[my slides\]]\n
 
@@ -48,11 +50,12 @@ The series is intended to survey the fast-paced recent developments in the study
 3. Optimal derandomization algorithms that incur essentially no runtime overhead (a.k.a "free lunch derandomization").
 </span>}}
 
-
-
 == *Selected Publications*
 
 === *Derandomization*
+
+- *Fiat-Shamir in the Plain Model from Derandomization (Or: Do Efficient Algorithms Believe that NP = PSPACE?)* [https://eccc.weizmann.ac.il/report/2024/116/ \[eccc\]]\n
+Lijie Chen, Ron D. Rothblum, Roei Tell.\n
 
 #- *When Arthur has Neither Random Coins nor Time to Spare: Superfast Derandomization of Proof Systems* [https://eccc.weizmann.ac.il/report/2022/057/ \[eccc\]] [https://drive.google.com/file/d/1R-4NO-yIMT_KBO5iel3LnTimnaQq6Eyt/view \[Roei's slides\]]\n
 
