@@ -2,7 +2,31 @@
 = Lijie Chen 
 
 ~~~
-{}{img_left}{lijie-5.jpg}{Lijie Chen} 
+{}{raw}
+<div>
+        <img id="random-photo" src="" alt="Random Photo">
+</div>
+
+<script>
+// Array of photo URLs
+const photos = [
+    'lijie-3.jpg',
+    'lijie-4.jpg',
+    'lijie-5.jpg',
+];
+
+// Function to select a random photo
+function getRandomPhoto() {
+    const randomIndex = Math.floor(Math.random() * photos.length);
+    return photos[randomIndex];
+}
+
+// Set the random photo on page load
+window.onload = function() {
+    const photoElement = document.getElementById('random-photo');
+    photoElement.src = getRandomPhoto();
+};
+</script>
 ~~~
  
 *Research Interests*: /Theoretical Computer Science /\n\n I have a broad interest in theoretical computer science. In particular, I am interested in classical and quantum computational complexity theory and their connections to other fields of computer science and quantum physics.

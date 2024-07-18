@@ -30,9 +30,30 @@ try {
 <div id="toptitle">
 <h1>Lijie Chen </h1>
 </div>
-<table class="imgtable"><tr><td>
-<img src="lijie-5.jpg" alt="Lijie Chen" />&nbsp;</td>
-<td align="left"></td></tr></table>
+<div>
+        <img id="random-photo" src="" alt="Random Photo">
+</div>
+
+<script>
+// Array of photo URLs
+const photos = [
+    'lijie-3.jpg',
+    'lijie-4.jpg',
+    'lijie-5.jpg',
+];
+
+// Function to select a random photo
+function getRandomPhoto() {
+    const randomIndex = Math.floor(Math.random() * photos.length);
+    return photos[randomIndex];
+}
+
+// Set the random photo on page load
+window.onload = function() {
+    const photoElement = document.getElementById('random-photo');
+    photoElement.src = getRandomPhoto();
+};
+</script>
 <p><b>Research Interests</b>: <i>Theoretical Computer Science </i><br /><br /> I have a broad interest in theoretical computer science. In particular, I am interested in classical and quantum computational complexity theory and their connections to other fields of computer science and quantum physics.
 </p>
 <p>I am a Miller Postdoctoral Fellow at UC Berkeley, hosted by <a href="https://www.avishaytal.org/" target=&ldquo;blank&rdquo;>Avishay Tal</a> and <a href="https://people.eecs.berkeley.edu/~vazirani/" target=&ldquo;blank&rdquo;>Umesh V. Vazirani</a>. I got my Ph.D. from MIT, and I was very fortunate to be advised by <a href="https://people.csail.mit.edu/rrw/" target=&ldquo;blank&rdquo;>Ryan Williams</a>. Prior to that, I received my bachelor's degree from <a href="http://iiis.tsinghua.edu.cn/en/yaoclass/" target=&ldquo;blank&rdquo;>Yao Class</a> at Tsinghua University.
@@ -295,7 +316,7 @@ Lijie Chen, <a href="https://sites.google.com/view/badihghazi/home" target=&ldqu
 <h2><a href="papersYear.html" target=&ldquo;blank&rdquo;><b>Full Publications</b></a><br /></h2>
 <div id="footer">
 <div id="footer-text">
-Page generated 2024-07-17 00:39:03 Pacific Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2024-07-18 00:47:03 Pacific Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 (<a href="index.jemdoc">source</a>)
 </div>
 </div>
