@@ -30,13 +30,12 @@ window.onload = function() {
 ~~~
  
 *Research Interests*: /Theoretical Computer Science /\n\n I have a broad interest in theoretical computer science. In particular, I am interested in classical and quantum computational complexity theory and their connections to other fields of computer science and quantum physics.
-  
+
+*I am joining Berkeley EECS as an Assistant Professor in Fall 2025*. [https://eecs.berkeley.edu/academics/graduate/research-programs/admissions/ \[Read about how to apply.\]]
 
 I am a Miller Postdoctoral Fellow at UC Berkeley, hosted by [https://www.avishaytal.org/ Avishay Tal] and [https://people.eecs.berkeley.edu/~vazirani/ Umesh V. Vazirani]. I got my Ph.D. from MIT, and I was very fortunate to be advised by [https://people.csail.mit.edu/rrw/ Ryan Williams]. Prior to that, I received my bachelor's degree from [http://iiis.tsinghua.edu.cn/en/yaoclass/ Yao Class] at Tsinghua University.
 
 At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jianli/ Jian Li], working on [papersCat.html\#MAB /Multi-Armed Bandits/]. During the Spring of 2016, I was visiting MIT, working under the supervision of Prof. [https://www.scottaaronson.com/ Scott Aaronson] on [papersCat.html\#quantum /Quantum Complexity/]. [CV.pdf \[CV\]]
-
-I am joining Berkeley EECS as an Assistant Professor in Fall 2025.
 
 [https://twitter.com/wjmzbmr1 Twitter]
 
@@ -56,9 +55,11 @@ I am joining Berkeley EECS as an Assistant Professor in Fall 2025.
 
 == *Workshops*
 
-- *FOCS23 workshop on explicit construction organized by Igor C. Oliveira, Rahul Santhanam, and myself* [https://sites.google.com/view/focs23-explicit-constructions/home \[site\]]
+- *Frontiers in Complexity Theory: A Graduate Workshop* organized by Roei Tell, Ryan Williams, and myself [http://dimacs.rutgers.edu/events/details?eID=2785 \[site with videos\]]
 
-- *FOCS22 workshop on derandomization organized by Roei Tell and myself*: [https://sites.google.com/view/newdirectionsinderand2022 \[site\]]
+- *FOCS23 workshop on explicit construction* organized by Igor C. Oliveira, Rahul Santhanam, and myself [https://sites.google.com/view/focs23-explicit-constructions/home \[site\]]
+
+- *FOCS22 workshop on derandomization* organized by Roei Tell and myself: [https://sites.google.com/view/newdirectionsinderand2022 \[site with videos\]]
 
 - *Recent Developments in Derandomization*, a two-part series presented together with Roei Tell at the [http://dimacs.rutgers.edu/events/details?eID=1083 DIMACS Workshop] on Meta-Complexity, Barriers, and Derandomization. [https://www.youtube.com/watch?v=H4VF7ttsyNA&t=2193s \[First talk by me\]] [https://www.youtube.com/watch?v=Nr5LcdLERkA \[Second talk by Roei\]]
 
@@ -74,22 +75,29 @@ The series is intended to survey the fast-paced recent developments in the study
 3. Optimal derandomization algorithms that incur essentially no runtime overhead (a.k.a "free lunch derandomization").
 </span>}}
 
+== *Manuscripts*
+
+- *On the unprovability of circuit size bounds in intuitionistic S12* [https://arxiv.org/abs/2404.11841 \[arxiv\]]\n
+Lijie Chen, Jiatu Li, Igor C. Oliveira\n
+
+- *Fiat-Shamir in the Plain Model from Derandomization (Or: Do Efficient Algorithms Believe that NP = PSPACE?)* [https://eccc.weizmann.ac.il/report/2024/116/ \[eccc\]]\n
+Lijie Chen, Ron D. Rothblum, Roei Tell\n
+
+- *Holographic pseudoentanglement and the complexity of the AdS/CFT dictionary* [https://arxiv.org/pdf/2411.04978 \[arxiv\]] \n
+Chris Akers, Adam Bouland, Lijie Chen, Tamara Kohler, Tony Metger, Umesh Vazirani
+
 == *Selected Publications*
 
 === *Derandomization*
 
-- *Fiat-Shamir in the Plain Model from Derandomization (Or: Do Efficient Algorithms Believe that NP = PSPACE?)* [https://eccc.weizmann.ac.il/report/2024/116/ \[eccc\]]\n
-Lijie Chen, Ron D. Rothblum, Roei Tell.\n
-
 #- *When Arthur has Neither Random Coins nor Time to Spare: Superfast Derandomization of Proof Systems* [https://eccc.weizmann.ac.il/report/2022/057/ \[eccc\]] [https://drive.google.com/file/d/1R-4NO-yIMT_KBO5iel3LnTimnaQq6Eyt/view \[Roei's slides\]]\n
 
 #- *Unstructured Hardness to Average-Case Randomness* [https://eccc.weizmann.ac.il/report/2022/097/ \[eccc\]] [https://drive.google.com/file/d/1fOkEXCfZFgcwMUzFDX5-nE0TVezQBbZ8/view \[Roei's slides\]]\n
-# Lijie Chen, Ron D. Rothblum, Roei Tell. /Foundations of Computer Science/ (FOCS 2022)\n
+# Lijie Chen, Ron D. Rothblum, Roei Tell /Foundations of Computer Science/ (FOCS 2022)\n
 
 - *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[Quanta Magazine\]]\n
 Lijie Chen, Zhenjian Lu, Igor C. Oliveira, Hanlin Ren, Rahul Santhanam\n
 /Foundations of Computer Science/ (FOCS 2023)\n
-
 
 - *Derandomization vs Refutation: A Unified Framework for Characterizing Derandomization* [https://eccc.weizmann.ac.il/report/2023/105/ \[eccc\]]\n
 Lijie Chen, Roei Tell, Ryan Williams \n
