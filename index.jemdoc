@@ -28,14 +28,25 @@ window.onload = function() {
 };
 </script>
 ~~~
- 
-*Research Interests*: /Theoretical Computer Science /\n\n I have a broad interest in theoretical computer science. In particular, I am interested in classical and quantum computational complexity theory and their connections to other fields of computer science and quantum physics.
 
-*I am joining Berkeley EECS as an Assistant Professor in Fall 2025*. [https://eecs.berkeley.edu/academics/graduate/research-programs/admissions/ \[Read about how to apply.\]]
+\n
+*I am joining Berkeley EECS as an Assistant Professor in Fall 2025*. [https://eecs.berkeley.edu/academics/graduate/research-programs/admissions/ \[Read about how to apply.\]] 
 
-I am a Miller Postdoctoral Fellow at UC Berkeley, hosted by [https://www.avishaytal.org/ Avishay Tal] and [https://people.eecs.berkeley.edu/~vazirani/ Umesh V. Vazirani]. I got my Ph.D. from MIT, and I was very fortunate to be advised by [https://people.csail.mit.edu/rrw/ Ryan Williams]. Prior to that, I received my bachelor's degree from [http://iiis.tsinghua.edu.cn/en/yaoclass/ Yao Class] at Tsinghua University.
+#In complexity theory, I am mostly excited by the following two fundamental questions: (1) Can we prove certain problems are inherently hard to compute? (e.g., is P equal to NP?) and (2) Is randomness inherently required for efficient computation? (is BPP equal to P?). For (1), I have proved several [https://eccc.weizmann.ac.il/report/2020/010/ state]-[https://eccc.weizmann.ac.il/report/2020/150/ of]-[https://eccc.weizmann.ac.il/report/2023/144/ the]-[https://eccc.weizmann.ac.il/report/2024/182/ art] lower bounds via connection to algorithms; For (2), I have proposed a [https://eccc.weizmann.ac.il/report/2023/094/ new framework] for studying [https://eccc.weizmann.ac.il/report/2021/080/ derandomization] that is inspired by ideas from cryptography, which also gives a [https://eccc.weizmann.ac.il/report/2023/076/ new algorithm] for finding canonical primes ([https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ quanta magazine]); see my [RS.pdf research statement] for more detail on my research.
 
-At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jianli/ Jian Li], working on [papersCat.html\#MAB /Multi-Armed Bandits/]. During the Spring of 2016, I was visiting MIT, working under the supervision of Prof. [https://www.scottaaronson.com/ Scott Aaronson] on [papersCat.html\#quantum /Quantum Complexity/]. [CV.pdf \[CV\]]
+#In particular, I am interested in classical and quantum computational complexity theory and their connections to other fields of computer science and quantum physics.
+
+I am a Miller Postdoctoral Fellow at UC Berkeley, hosted by [https://www.avishaytal.org/ Avishay Tal] and [https://people.eecs.berkeley.edu/~vazirani/ Umesh V. Vazirani]. I got my Ph.D. from MIT, and I was very fortunate to be advised by [https://people.csail.mit.edu/rrw/ Ryan Williams]. Prior to that, I received my bachelor's degree from the [http://iiis.tsinghua.edu.cn/en/yaoclass/ Institute for Interdisciplinary Information Sciences] at Tsinghua University.
+
+At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jianli/ Jian Li]. During the Spring of 2016, I was visiting MIT, working under the supervision of Prof. [https://www.scottaaronson.com/ Scott Aaronson]. [CV.pdf \[CV\]]
+
+*Research Interests*: I have a broad interest in theoretical computer science, especially in fundamental questions in complexity theory, and also in applying the ideas of theoretical computer science to other scientific fields such as quantum physics and AI safety.\n
+
+*Some questions that I am excited about*:
+- How to make progress towards P vs. NP?
+- Is [https://eccc.weizmann.ac.il/report/2023/094/ randomness] inherently required for efficient computation? (is BPP equal to P?)
+- How does quantum complexity theory shed light on [https://arxiv.org/pdf/1612.05903 quantum] [https://arxiv.org/pdf/2411.04978 physics]?
+- How can we apply ideas from theoretical computer science to establish safety guarantees for AI systems?
 
 [https://twitter.com/wjmzbmr1 Twitter]
 
