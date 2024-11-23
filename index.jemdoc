@@ -44,7 +44,7 @@ At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jia
 
 *Some questions that I am excited about*:
 - How to make progress towards P vs. NP?
-- Is [https://eccc.weizmann.ac.il/report/2023/094/ randomness] inherently required for efficient computation? (is BPP equal to P?)
+- Is randomness inherently required for efficient computation? ([https://eccc.weizmann.ac.il/report/2023/094/ is BPP equal to P]?)
 - How does quantum complexity theory shed light on [https://arxiv.org/pdf/1612.05903 quantum] [https://arxiv.org/pdf/2411.04978 physics]?
 - How can we apply ideas from theoretical computer science to establish safety guarantees for AI systems?
 
