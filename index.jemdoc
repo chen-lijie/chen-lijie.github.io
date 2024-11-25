@@ -31,6 +31,7 @@ window.onload = function() {
 
 \n
 *I am joining Berkeley EECS as an Assistant Professor in Fall 2025*. [https://eecs.berkeley.edu/academics/graduate/research-programs/admissions/ \[Read about how to apply.\]] 
+    - For faculty preference: There is a dropdown but my name is not added yet. To indicate me as your potential advisor/faculty mentor, please enter my name in the field indicated below under the "Faculty Advisor" section of the application.
 
 #In complexity theory, I am mostly excited by the following two fundamental questions: (1) Can we prove certain problems are inherently hard to compute? (e.g., is P equal to NP?) and (2) Is randomness inherently required for efficient computation? (is BPP equal to P?). For (1), I have proved several [https://eccc.weizmann.ac.il/report/2020/010/ state]-[https://eccc.weizmann.ac.il/report/2020/150/ of]-[https://eccc.weizmann.ac.il/report/2023/144/ the]-[https://eccc.weizmann.ac.il/report/2024/182/ art] lower bounds via connection to algorithms; For (2), I have proposed a [https://eccc.weizmann.ac.il/report/2023/094/ new framework] for studying [https://eccc.weizmann.ac.il/report/2021/080/ derandomization] that is inspired by ideas from cryptography, which also gives a [https://eccc.weizmann.ac.il/report/2023/076/ new algorithm] for finding canonical primes ([https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ quanta magazine]); see my [RS.pdf research statement] for more detail on my research.
 
