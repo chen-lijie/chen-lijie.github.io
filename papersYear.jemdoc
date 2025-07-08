@@ -5,6 +5,10 @@
 
 == 2025
 
+- *Theoretical limitations of multi-layer Transformer* [https://arxiv.org/abs/2412.02975 \[arxiv\]]\n
+Lijie Chen, Binghui Peng, Hongxun Wu\n
+/Foundations of Computer Science/ (FOCS 2025)\n
+
 - *Towards Free Lunch Derandomization from Necessary Assumptions (and OWFs)* [https://eccc.weizmann.ac.il/report/2025/010/ \[eccc\]]\n
 Marshall Ball, Lijie Chen, Roei Tell\n
 /Computational Complexity Conference/ (CCC 2025)\n
