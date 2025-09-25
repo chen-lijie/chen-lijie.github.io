@@ -1,0 +1,194 @@
+# jemdoc: menu{MENU-CS278}{cs278-projects.html}
+= CS 278: Final Projects
+
+== Project Logistics
+- 50% of your grade consists of your final project, done by yourself or with up to 2 others.
+- This will consist of a project proposal (1-2 pages), *due October 1, 6pm PT*
+- a mid-term project report (1-2 pages), *due November 5, 6pm PT*
+- a final project paper (at least 5 pages), and a final presentation in class. *due December 10, 6pm PT* 
+
+== Project Categories
+There are two types of projects you can do:
+
+- *Survey of a complexity-related topic* we haven't covered in class. See below for some suggestions, but any new topic is definitely welcome (consult the instructor if you feel the connection to complexity theory might be weak :) ).
+
+- *Exploring an open direction* related to complexity theory. This can involve either trying to make progress on an open problem or applying complexity-theoretic ideas to other fields. You are not required to solve any open problems to get a good grade. (You can always turn the project into a survey project if the open problems turn out to be too hard :) The point is to learn something new along the way.)
+
+== Suggested Project List
+
+Again, you are not required to select from the list, but do consult the instructor to ensure the connection to complexity theory.
+
+== Survey Project
+
+- Project scope: Understand one cool paper related to complexity theory, for that you may also need to understand some important previous work of that paper. Below is a list of suggestions.
+- workload is estimated and may not be accurate
+
+=== Arithmetic Complexity
+
+==== Polynomial identity testing from (almost-equivalent) hardness assumption
+- read and study [https://eccc.weizmann.ac.il/report/2025/042/ Polynomial-Time PIT from (Almost) Necessary Assumptions]
+- prelim: [https://eccc.weizmann.ac.il/report/2021/080/ Hardness vs Randomness, Revised: Uniform, Non-Black-Box, and Instance-Wise]
+- prelim: [https://arxiv.org/abs/1905.00091 Derandomization from Algebraic Hardness]
+- workload: very high
+
+==== Superpolynomial Lower Bounds Against Low-Depth Algebraic Circuits
+- read and study [https://eccc.weizmann.ac.il/report/2021/081/]
+- workload: medium
+
+==== Constant-Depth Arithmetic Circuits for Linear Algebra Problems
+- read and study [https://arxiv.org/abs/2404.10839]
+- workload: medium
+
+=== Circuit Complexity
+
+==== Monotone Circuit Complexity of Matching
+- read and study [https://arxiv.org/abs/2507.16105]
+- workload: medium
+
+==== Fooling Constant-Depth Threshold Circuits
+- [https://eccc.weizmann.ac.il/report/2021/002/]
+- workload: high
+
+=== Proof Complexity and Bounded Arithmetic
+
+==== Automating Resolution is NP-Hard
+- read and study [https://arxiv.org/pdf/1904.02991]
+- workload: medium
+
+==== Reverse Mathematics of Complexity Lower Bounds
+- [https://eccc.weizmann.ac.il/report/2024/060/]
+- workload: high
+
+=== Meta-complexity
+
+==== NP-Hardness of Learning Programs and Partial MCSP
+- [https://eccc.weizmann.ac.il/report/2022/119/]
+- workload: high
+
+==== Beating Brute Force for Compression Problems
+- [https://eccc.weizmann.ac.il/report/2023/171/]
+- workload: medium
+
+==== Constant Depth Formula and Partial Function Versions of MCSP are Hard
+- [https://eccc.weizmann.ac.il/report/2020/183/]
+- workload: medium
+
+==== SAT Reduces to the Minimum Circuit Size Problem with a Random Oracle
+- [https://eccc.weizmann.ac.il/report/2023/165/]
+- workload: medium
+
+==== NP-Hardness of Approximating Meta-Complexity: A Cryptographic Approach
+- [https://eccc.weizmann.ac.il/report/2023/046/]
+- workload : medium
+
+=== Derandomization
+
+==== Derandomization vs Refutation: A Unified Framework for Characterizing Derandomization
+- [https://eccc.weizmann.ac.il/report/2023/105/]
+- workload: high
+
+==== When Connectivity Is Hard, Random Walks Are Easy With Non-Determinism
+- [https://eccc.weizmann.ac.il/report/2025/077/]
+- workload: high
+
+==== Fiat-Shamir in the Plain Model from Derandomization (Or: Do Efficient Algorithms Believe that NP = PSPACE?)
+- [https://eccc.weizmann.ac.il/report/2024/116/]
+- workload: medium
+
+==== Instance-Wise Hardness versus Randomness Tradeoffs for Arthur-Merlin Protocols
+- [https://pages.cs.wisc.edu/~dieter/Papers/r-am-instance-wise-eccc.pdf]
+- workload: medium
+
+==== Simple Extractors for All Min-Entropies and a New Pseudorandom Generator
+- [https://users.cms.caltech.edu/~umans/papers/SU01-final.pdf]
+- workload: high
+
+==== Near-Optimal Derandomization of Medium-Width Branching Programs
+- [https://eccc.weizmann.ac.il/report/2022/150/]
+- workload: high
+
+==== Derandomizing Logspace With a Small Shared Hard Drive
+- [https://eccc.weizmann.ac.il/report/2023/168/]
+- workload: medium
+
+==== Time-space tradeoffs for element distinctness and set intersection via pseudorandomness
+- [https://arxiv.org/abs/2210.07534]
+- workload: high
+
+=== Hardness Magnification
+
+==== Bootstrapping Results for Threshold Circuits "Just Beyond" Known Lower Bounds
+- [https://eccc.weizmann.ac.il/report/2018/199/]
+- workload: medium
+
+==== Beyond Natural Proofs: Hardness Magnification and Locality
+- [https://eccc.weizmann.ac.il/report/2019/168/]
+- workload: medium
+
+=== Quantum Complexity Theory
+
+==== Unitary Complexity and the Uhlmann Transformation Problem
+- [https://arxiv.org/pdf/2306.13073]
+- workload: very high
+
+==== How to Construct Random Unitaries
+- [https://arxiv.org/abs/2410.10116]
+- workload: high
+
+==== Oracle Separation of BQP and PH
+- [https://eccc.weizmann.ac.il/report/2018/107/]
+- workload: medium
+
+
+== Open problem projects
+
+- Project scope: Pick one problem (or an open-ended direction) in complexity theory to think about.
+- Totally okay if you can't prove any new theorem, you can always either (1) write down the problem, discuss the state-of-the-art results, explain why it's diffcult to solve or (2) switch to a survey project on related topics.
+
+=== Catalytic Space
+
+==== Open problems related to catalytic space
+- Catalytic space is one of the most exciting research areas recently. Below are many open questions; see also some of the recent papers on catalytic computation.
+- [http://smtp.eatcs.org/index.php/beatcs/article/viewFile/780/826]
+
+==== Catalytic Communication
+- A recent paper studied the communication version of catalytic computation, and there are several open problems
+- [https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2025.79]
+
+=== Machine Learning and Complexity Theory
+
+==== Improve the decoder lower bound in complexity of Transformers
+- The paper proved some unconditional lower bounds against a (log log n)-layer decoder, which is a bit shallow. Can you improve the depth?
+- [https://arxiv.org/abs/2412.02975]
+
+==== Improve the lower bound for Chain-of-Thought reasoning
+- CoT makes the transformer much more powerful in terms of expressive power. Prove some interesting new lower bound against "Transformer + CoT"
+- [https://arxiv.org/abs/2502.02393]
+
+==== Develop an interesting complexity theory for autoregressive models
+- Interestingly, being able to solve an NC1-complete problem for an autoregressive model does not mean the autoregressive model can solve other (even very simple) NC1-complete problems (can you think about why?). Can we have a nice theory for the computational power of autoregressive models?
+
+=== Circuit Complexity and Lower Bounds
+
+==== Improve the AMEXP lower bound
+- The paper proves a maximum circuit lower bound for AMEXP with a sub-exponential amount of advice. Can you improve it?
+- lower the amount of advice
+- Make it hold for MAEXP with advice
+- or prove an algebraization barrier (see https://www.scottaaronson.com/papers/alg.pdf)
+- [https://eccc.weizmann.ac.il/report/2024/182/]
+
+=== Derandomization
+
+==== Many open questions in derandomization
+- There are a lot of open problems in derandomization listed in the document
+- [https://dl.acm.org/doi/pdf/10.1145/3604943.3604950]
+
+==== Lots of open problems for unconditional PRGs
+- There are a lot of open problems in the study of unconditional PRGs, listed in the document
+- [https://eccc.weizmann.ac.il/report/2023/019/]
+
+=== Meta-Mathematics
+
+==== Many open problems in meta-mathematics
+- There are a lot of open problems in meta-mathematics of complexity theory, listed in the document
+- [https://www.dcs.warwick.ac.uk/~igorcarb/documents/papers/Oli25-Survey.pdf]

@@ -61,7 +61,7 @@ I am teaching [cs278-fall-2025/cs278-complexity.html CS 278: Computational Compl
 
 - *Weighted Pseudorandom Generators via Inverse Analysis of Random Walks and Shortcutting* [https://eccc.weizmann.ac.il/report/2023/114/ \[eccc\]] [https://www.ias.edu/video/weighted-pseudorandom-generators-inverse-analysis-random-walks-and-shortcutting \[William's talk at IAS\]]\n
 
-- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[Quanta Magazine\]]\n
+- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [slides/pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[Quanta Magazine\]]\n
 
 - *My Ph.D. thesis!* [documents/Lijie-Chen-thesis.pdf \[thesis\]]
 
@@ -104,7 +104,7 @@ Chris Akers, Adam Bouland, Lijie Chen, Tamara Kohler, Tony Metger, Umesh Vaziran
 #- *Unstructured Hardness to Average-Case Randomness* [https://eccc.weizmann.ac.il/report/2022/097/ \[eccc\]] [https://drive.google.com/file/d/1fOkEXCfZFgcwMUzFDX5-nE0TVezQBbZ8/view \[Roei's slides\]]\n
 # Lijie Chen, Ron D. Rothblum, Roei Tell /Foundations of Computer Science/ (FOCS 2022)\n
 
-- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[Quanta Magazine\]]\n
+- *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [slides/pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[Quanta Magazine\]]\n
 Lijie Chen, Zhenjian Lu, Igor C. Oliveira, Hanlin Ren, Rahul Santhanam\n
 /Foundations of Computer Science/ (FOCS 2023)\n
 
@@ -160,7 +160,7 @@ Lijie Chen, Shuichi Hirahara, Hanlin Ren\n
 </span>}}
 Lijie Chen, Xin Lyu, [https://people.csail.mit.edu/rrw/ Ryan Williams]. /Foundations of Computer Science/ (FOCS 2020)\n
 
-- *Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization* [https://eccc.weizmann.ac.il/report/2020/010/ \[eccc\]] [slides/Reunion_Talk.pptx \[slides at Simons (for complexity theorist)\]] [slides/IAS_Talk.pptx \[slides at IAS (intense version)\]] [slides/Warwick_Talk.pptx \[slides at Warwick (lightweight version)\]] {{<span class="title" onclick="toggle('summary-avg-lowb')" style="cursor:pointer; u:hover">
+- *Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization* [https://eccc.weizmann.ac.il/report/2020/010/ \[eccc\]] [slides/Simons-2018-THRTHR.pptx \[slides at Simons (for complexity theorist)\]] [slides/IAS_Talk.pptx \[slides at IAS (intense version)\]] [slides/Warwick_Talk.pptx \[slides at Warwick (lightweight version)\]] {{<span class="title" onclick="toggle('summary-avg-lowb')" style="cursor:pointer; u:hover">
 <font color=red>
 [short highlight]
 </font>
