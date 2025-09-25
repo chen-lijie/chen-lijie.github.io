@@ -15,7 +15,7 @@ I am currently a first year graduate student at MIT, advised by [https://people.
 Lijie Chen\n
 /Computational Complexity Conference/ (CCC 2018)\n
 *Invited to the Toc Special Issue for CCC 2018*\n
-[https://eccc.weizmann.ac.il/report/2018/026/ \[eccc\] ] [https://arxiv.org/abs/1802.02325 \[arxiv\]] [CCC_2018_MaxIP.pptx \[slides\] ]\n
+[https://eccc.weizmann.ac.il/report/2018/026/ \[eccc\] ] [https://arxiv.org/abs/1802.02325 \[arxiv\]] [slides/CCC_2018_MaxIP.pptx \[slides\] ]\n
 Summary: /Under SETH, we give a characterization on when approxiamte Boolean Max-IP is hard (w.r.t approxiamtion ratios and vector dimensions). We also show quadratic time hardness for Z-Max-IP with 2^(log\* n) dimensions.\n
 One notable corollary is that finding the furthest pair among n points in 2^(log\* n) dimension Euclidian space requires essentialy n^2 time under SETH./\n
 
@@ -24,13 +24,13 @@ Scott Aaronson, Lijie Chen\n
 /Computational Complexity Conference/ (CCC 2017)\n
 *Invited to the Toc Special Issue for CCC 2017*\n
 [http://eccc.hpi-web.de/report/2016/200/ \[eccc\]] [https://arxiv.org/abs/1612.05903 \[arxiv\]] 
-[CCC_2017_QuantumSupremacy.pdf \[slides\]]\n
+[documents/CCC_2017_QuantumSupremacy.pdf \[slides\]]\n
 
 - *On The Power of Statistical Zero Knowledge*\n
 Adam Bouland, Lijie Chen, Dhiraj Holden, Justin Thaler, Prashant Nalini Vasudevan\n 
 /Foundations of Computer Science/ (FOCS 2017)\n
 *Invited to the SICOMP Special Issue for FOCS 2017*\n
-[http://eccc.hpi-web.de/report/2016/140/ \[eccc\]] [http://arxiv.org/abs/1609.02888 \[arxiv\]] [FOCS_2017_SZKPP.pdf \[slides\]]\n
+[http://eccc.hpi-web.de/report/2016/140/ \[eccc\]] [http://arxiv.org/abs/1609.02888 \[arxiv\]] [documents/FOCS_2017_SZKPP.pdf \[slides\]]\n
 Summary: /We constructed an oracle separation between SZK and PP, solving an open question by Watrous in 2002./
 
 
@@ -61,7 +61,7 @@ Lijie Chen\n
 
 - 2017 ACM-ICPC world finals, Silver medal, 6th place (with Yuhao Du, Ce Jin).
 
-- *Majority vs. Approximate Linear Sum and average-case complexity below NC1* [https://eccc.weizmann.ac.il/report/2021/040/ \[eccc\]] [MAJ-apxSUM-dagstuhl.ppsx \[slides by Igor\]] [https://www.youtube.com/watch?v=3sA1lfwfHO8 \[video by Xin\]] {{<span class="title" onclick="toggle('summary-appxsum')" style="cursor:pointer; u:hover">
+- *Majority vs. Approximate Linear Sum and average-case complexity below NC1* [https://eccc.weizmann.ac.il/report/2021/040/ \[eccc\]] [slides/MAJ-apxSUM-dagstuhl.ppsx \[slides by Igor\]] [https://www.youtube.com/watch?v=3sA1lfwfHO8 \[video by Xin\]] {{<span class="title" onclick="toggle('summary-appxsum')" style="cursor:pointer; u:hover">
 <font color=red>
 [short highlight]
 </font>
@@ -86,7 +86,7 @@ We prove that any $o\left(\sqrt{\log n}\right)$-pass streaming algorithm require
 
 - *Near-Optimal Two-Pass Streaming Algorithm for Sampling Random Walks over Directed Graphs* [https://arxiv.org/abs/2102.11251 \[arxiv\]] [https://www.youtube.com/watch?v=NbI1lbcjfDg \[video by Raghuvansh\]]
 
-- *Simple and fast derandomization from very hard functions: Eliminating randomness at almost no cost* [https://eccc.weizmann.ac.il/report/2020/148/ \[eccc\]] [optimalderand-2020-ICT-CAS.pptx \[slides by me\]] [roei-slides-fast-derand.pdf \[slides by Roei\]] [https://www.youtube.com/watch?v=ZSGfxuga0fo \[video by Roei Tell at STOC 2021\]] {{<span onclick="toggle('summary-fastderand-short')" style="cursor:pointer; u:hover; white-space:nowrap">
+- *Simple and fast derandomization from very hard functions: Eliminating randomness at almost no cost* [https://eccc.weizmann.ac.il/report/2020/148/ \[eccc\]] [slides/optimalderand-2020-ICT-CAS.pptx \[slides by me\]] [roei-slides-fast-derand.pdf \[slides by Roei\]] [https://www.youtube.com/watch?v=ZSGfxuga0fo \[video by Roei Tell at STOC 2021\]] {{<span onclick="toggle('summary-fastderand-short')" style="cursor:pointer; u:hover; white-space:nowrap">
 <font color=red>
 [short highlight]
 </font>

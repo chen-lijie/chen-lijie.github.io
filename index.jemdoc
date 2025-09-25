@@ -10,9 +10,9 @@
 <script>
 // Array of photo URLs
 const photos = [
-    'lijie-3.jpg',
-    'lijie-4.jpg',
-    'lijie-5.jpg',
+    'photos/lijie-3.jpg',
+    'photos/lijie-4.jpg',
+    'photos/lijie-5.jpg',
 ];
 
 // Function to select a random photo
@@ -31,15 +31,15 @@ window.onload = function() {
 
 \n
 
-#In complexity theory, I am mostly excited by the following two fundamental questions: (1) Can we prove certain problems are inherently hard to compute? (e.g., is P equal to NP?) and (2) Is randomness inherently required for efficient computation? (is BPP equal to P?). For (1), I have proved several [https://eccc.weizmann.ac.il/report/2020/010/ state]-[https://eccc.weizmann.ac.il/report/2020/150/ of]-[https://eccc.weizmann.ac.il/report/2023/144/ the]-[https://eccc.weizmann.ac.il/report/2024/182/ art] lower bounds via connection to algorithms; For (2), I have proposed a [https://eccc.weizmann.ac.il/report/2023/094/ new framework] for studying [https://eccc.weizmann.ac.il/report/2021/080/ derandomization] that is inspired by ideas from cryptography, which also gives a [https://eccc.weizmann.ac.il/report/2023/076/ new algorithm] for finding canonical primes ([https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ quanta magazine]); see my [RS.pdf research statement] for more detail on my research.
+#In complexity theory, I am mostly excited by the following two fundamental questions: (1) Can we prove certain problems are inherently hard to compute? (e.g., is P equal to NP?) and (2) Is randomness inherently required for efficient computation? (is BPP equal to P?). For (1), I have proved several [https://eccc.weizmann.ac.il/report/2020/010/ state]-[https://eccc.weizmann.ac.il/report/2020/150/ of]-[https://eccc.weizmann.ac.il/report/2023/144/ the]-[https://eccc.weizmann.ac.il/report/2024/182/ art] lower bounds via connection to algorithms; For (2), I have proposed a [https://eccc.weizmann.ac.il/report/2023/094/ new framework] for studying [https://eccc.weizmann.ac.il/report/2021/080/ derandomization] that is inspired by ideas from cryptography, which also gives a [https://eccc.weizmann.ac.il/report/2023/076/ new algorithm] for finding canonical primes ([https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ quanta magazine]); see my [documents/RS.pdf research statement] for more detail on my research.
 
 #In particular, I am interested in classical and quantum computational complexity theory and their connections to other fields of computer science and quantum physics.
 
 I am an Assistant Professor at the Department of Electrical Engineering and Computer Sciences at UC Berkeley. I am honored to be part of Berkeley's [http://theory.cs.berkeley.edu/ Theory Group]. Prior to that, I was a Miller Research Fellow at UC Berkeley, hosted by [https://www.avishaytal.org/ Avishay Tal] and [https://people.eecs.berkeley.edu/~vazirani/ Umesh V. Vazirani]. I got my Ph.D. from MIT, and I was very fortunate to be advised by [https://people.csail.mit.edu/rrw/ Ryan Williams]. I received my bachelor's degree from the [http://iiis.tsinghua.edu.cn/en/yaoclass/ Institute for Interdisciplinary Information Sciences] at Tsinghua University.
 
-At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jianli/ Jian Li]. During the Spring of 2016, I was visiting MIT, working under the supervision of Prof. [https://www.scottaaronson.com/ Scott Aaronson]. [CV.pdf \[CV\]]
+At Tsinghua University, I was advised by Prof. [http://iiis.tsinghua.edu.cn/~jianli/ Jian Li]. During the Spring of 2016, I was visiting MIT, working under the supervision of Prof. [https://www.scottaaronson.com/ Scott Aaronson]. [documents/CV.pdf \[CV\]]
 
-I am teaching [cs278-complexity.html CS 278: Computational Complexity Theory] this Fall!
+I am teaching [cs278-fall-2025/cs278-complexity.html CS 278: Computational Complexity Theory] this Fall!
 
 *Research Interests*: I have a broad interest in theoretical computer science, especially in fundamental questions in complexity theory, and also in applying the ideas of theoretical computer science to other scientific fields such as quantum physics and AI safety.\n
 
@@ -57,13 +57,13 @@ I am teaching [cs278-complexity.html CS 278: Computational Complexity Theory] th
 
 - *Reverse mathematics of complexity lower bounds* [https://eccc.weizmann.ac.il/report/2024/060/ \[eccc\]] [https://www.dcs.warwick.ac.uk/~igorcarb/documents/slides/meta-mathematics-oberwolfach.ppsx \[Igor's slides\]] \n
 
-- *Symmetric Exponential Time Requires Near-Maximum Circuit Size* [https://eccc.weizmann.ac.il/report/2023/144/ \[eccc\]] [https://arxiv.org/abs/2309.12912 \[arxiv\]] [https://www.youtube.com/watch?v=uxyN2eVYKic \[Hanlin's talk at IAS\]] [Sigma2-CKT-LOWB.pptx \[my slides\]]\n
+- *Symmetric Exponential Time Requires Near-Maximum Circuit Size* [https://eccc.weizmann.ac.il/report/2023/144/ \[eccc\]] [https://arxiv.org/abs/2309.12912 \[arxiv\]] [https://www.youtube.com/watch?v=uxyN2eVYKic \[Hanlin's talk at IAS\]] [slides/Sigma2-CKT-LOWB.pptx \[my slides\]]\n
 
 - *Weighted Pseudorandom Generators via Inverse Analysis of Random Walks and Shortcutting* [https://eccc.weizmann.ac.il/report/2023/114/ \[eccc\]] [https://www.ias.edu/video/weighted-pseudorandom-generators-inverse-analysis-random-walks-and-shortcutting \[William's talk at IAS\]]\n
 
 - *Polynomial-Time Pseudodeterministic Construction of Primes* [https://eccc.weizmann.ac.il/report/2023/076/ \[eccc\]] [pseudodeterministic-construction.pptx \[my slides\]] [https://www.quantamagazine.org/how-to-build-a-big-prime-number-20230713/ \[Quanta Magazine\]]\n
 
-- *My Ph.D. thesis!* [Lijie-Chen-thesis.pdf \[thesis\]]
+- *My Ph.D. thesis!* [documents/Lijie-Chen-thesis.pdf \[thesis\]]
 
 == *Workshops*
 
@@ -75,7 +75,7 @@ I am teaching [cs278-complexity.html CS 278: Computational Complexity Theory] th
 
 - *Recent Developments in Derandomization*, a two-part series presented together with Roei Tell at the [http://dimacs.rutgers.edu/events/details?eID=1083 DIMACS Workshop] on Meta-Complexity, Barriers, and Derandomization. [https://www.youtube.com/watch?v=H4VF7ttsyNA&t=2193s \[First talk by me\]] [https://www.youtube.com/watch?v=Nr5LcdLERkA \[Second talk by Roei\]]
 
-- *Derandomization and its connections throughout complexity theory*, a three-part series presented together with Roei Tell at IAS. [https://www.ias.edu/video/derandomization-and-its-connections-throughout-complexity-theory \[First talk by Roei\]] [https://www.ias.edu/video/derandomization-and-its-connections-throughout-complexity-theory-0 \[Second talk by me\]] [notes-ias-CLW.pdf \[Notes on the second talk\]] [https://www.ias.edu/video/non-black-box-derandomization \[Third talk by Roei\]] {{<span class="title" onclick="toggle('derand-series')" style="cursor:pointer; u:hover">
+- *Derandomization and its connections throughout complexity theory*, a three-part series presented together with Roei Tell at IAS. [https://www.ias.edu/video/derandomization-and-its-connections-throughout-complexity-theory \[First talk by Roei\]] [https://www.ias.edu/video/derandomization-and-its-connections-throughout-complexity-theory-0 \[Second talk by me\]] [documents/notes-ias-CLW.pdf \[Notes on the second talk\]] [https://www.ias.edu/video/non-black-box-derandomization \[Third talk by Roei\]] {{<span class="title" onclick="toggle('derand-series')" style="cursor:pointer; u:hover">
 <font color=red>
 [summary]
 </font>
@@ -112,7 +112,7 @@ Lijie Chen, Zhenjian Lu, Igor C. Oliveira, Hanlin Ren, Rahul Santhanam\n
 Lijie Chen, Roei Tell, Ryan Williams \n
 /Foundations of Computer Science/ (FOCS 2023)\n
 
-- *Hardness vs Randomness, Revised: Uniform, Non-Black-Box, and Instance-Wise* [https://eccc.weizmann.ac.il/report/2021/080/ \[eccc\]] [nonbb-derand-final.pptx \[slides\] ] [https://www.youtube.com/watch?v=v4xMEKAS07A \[Roei's talk at TCS plus\]] [https://drive.google.com/file/d/1L2z3USxzrIVpJbfFI1EyuZtyQ2BmYJSF/view \[Roei's slides\]] {{<span class="title" onclick="toggle('nonbb-derand')" style="cursor:pointer; u:hover">
+- *Hardness vs Randomness, Revised: Uniform, Non-Black-Box, and Instance-Wise* [https://eccc.weizmann.ac.il/report/2021/080/ \[eccc\]] [slides/nonbb-derand-final.pptx \[slides\] ] [https://www.youtube.com/watch?v=v4xMEKAS07A \[Roei's talk at TCS plus\]] [https://drive.google.com/file/d/1L2z3USxzrIVpJbfFI1EyuZtyQ2BmYJSF/view \[Roei's slides\]] {{<span class="title" onclick="toggle('nonbb-derand')" style="cursor:pointer; u:hover">
 <font color=red>
 [short summary]
 </font>
@@ -123,7 +123,7 @@ Textbook hardness-to-randomness converts circuit lower bounds into PRGs. But is 
 </span>}}
 Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]. /Foundations of Computer Science/ (FOCS 2021). {{<font color=red>}}Invited to the SICOMP Special Issue for FOCS 2021{{</font>}}\n
 
-- *Simple and fast derandomization from very hard functions: Eliminating randomness at almost no cost* [https://eccc.weizmann.ac.il/report/2020/148/ \[eccc\]] [http://www.wisdom.weizmann.ac.il/~oded/MC/294.html \[Oded's choice\]] [optimalderand-2020-ICT-CAS.pptx \[slides by me\]] [roei-slides-fast-derand.pdf \[slides by Roei\]] {{<span onclick="toggle('summary-fastderand-short-2')" style="cursor:pointer; u:hover; white-space:nowrap">
+- *Simple and fast derandomization from very hard functions: Eliminating randomness at almost no cost* [https://eccc.weizmann.ac.il/report/2020/148/ \[eccc\]] [http://www.wisdom.weizmann.ac.il/~oded/MC/294.html \[Oded's choice\]] [slides/optimalderand-2020-ICT-CAS.pptx \[slides by me\]] [documents/roei-slides-fast-derand.pdf \[slides by Roei\]] {{<span onclick="toggle('summary-fastderand-short-2')" style="cursor:pointer; u:hover; white-space:nowrap">
 <font color=red>
 [short highlight]
 </font>
@@ -145,11 +145,11 @@ Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]. /Symposium on t
 
 === *Circuit Lower Bounds from Algorithms*
 
-- *Symmetric Exponential Time Requires Near-Maximum Circuit Size* [https://eccc.weizmann.ac.il/report/2023/144/ \[eccc\]] [https://arxiv.org/abs/2309.12912 \[arxiv\]] [https://www.youtube.com/watch?v=uxyN2eVYKic \[Hanlin's talk at IAS\]] [Sigma2-CKT-LOWB.pptx \[my slides\]]\n
+- *Symmetric Exponential Time Requires Near-Maximum Circuit Size* [https://eccc.weizmann.ac.il/report/2023/144/ \[eccc\]] [https://arxiv.org/abs/2309.12912 \[arxiv\]] [https://www.youtube.com/watch?v=uxyN2eVYKic \[Hanlin's talk at IAS\]] [slides/Sigma2-CKT-LOWB.pptx \[my slides\]]\n
 Lijie Chen, Shuichi Hirahara, Hanlin Ren\n
 /Symposium on the Theory of Computing/ (STOC 2024)\n
 
-- *Almost Everywhere Circuit Lower Bounds from Non-Trivial Derandomization* [https://eccc.weizmann.ac.il/report/2020/150/ \[eccc\]] [https://www.youtube.com/watch?v=vpyoZdv--nw&list=PL3DbynX8gwfJLYrm4EoZn6aK7IAACiTKa&index=6 \[video by Xin Lyu in FOCS 2020\]] [Ryan-slides-ae-lowerbound.pdf \[slides by Ryan\]] {{<span class="title" onclick="toggle('summary-ae-lowb-2')" style="cursor:pointer; u:hover">
+- *Almost Everywhere Circuit Lower Bounds from Non-Trivial Derandomization* [https://eccc.weizmann.ac.il/report/2020/150/ \[eccc\]] [https://www.youtube.com/watch?v=vpyoZdv--nw&list=PL3DbynX8gwfJLYrm4EoZn6aK7IAACiTKa&index=6 \[video by Xin Lyu in FOCS 2020\]] [documents/Ryan-slides-ae-lowerbound.pdf \[slides by Ryan\]] {{<span class="title" onclick="toggle('summary-ae-lowb-2')" style="cursor:pointer; u:hover">
 <font color=red>
 [short highlight]
 </font>
@@ -160,7 +160,7 @@ Lijie Chen, Shuichi Hirahara, Hanlin Ren\n
 </span>}}
 Lijie Chen, Xin Lyu, [https://people.csail.mit.edu/rrw/ Ryan Williams]. /Foundations of Computer Science/ (FOCS 2020)\n
 
-- *Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization* [https://eccc.weizmann.ac.il/report/2020/010/ \[eccc\]] [Reunion_Talk.pptx \[slides at Simons (for complexity theorist)\]] [IAS_Talk.pptx \[slides at IAS (intense version)\]] [Warwick_Talk.pptx \[slides at Warwick (lightweight version)\]] {{<span class="title" onclick="toggle('summary-avg-lowb')" style="cursor:pointer; u:hover">
+- *Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization* [https://eccc.weizmann.ac.il/report/2020/010/ \[eccc\]] [slides/Reunion_Talk.pptx \[slides at Simons (for complexity theorist)\]] [slides/IAS_Talk.pptx \[slides at IAS (intense version)\]] [slides/Warwick_Talk.pptx \[slides at Warwick (lightweight version)\]] {{<span class="title" onclick="toggle('summary-avg-lowb')" style="cursor:pointer; u:hover">
 <font color=red>
 [short highlight]
 </font>
@@ -175,7 +175,7 @@ Lijie Chen, [https://hanlin-ren.github.io/ Hanlin Ren]. /Symposium on the Theory
 # - *Non-deterministic Quasi-Polynomial Time is Average-case Hard for ACC Circuits* [Austin-NQP-Average-Case-Lower-Bound.pptx \[Talk at UT Austin's Theory Seminar\]] [https://eccc.weizmann.ac.il/report/2019/031/ \[eccc\]] [Che19-journal-version.pdf \[draft of journal version\]]\n
 # Lijie Chen. /Foundations of Computer Science/ (FOCS 2019). {{<font color=red>}}Invited to the SICOMP Special Issue for FOCS 2019{{</font>}}\n
 
-- *Efficient Construction of Rigid Matrices Using an NP Oracle* [FOCS_2019_rigidmatrix.pdf \[pdf\]] [FOCS_2019_rigidmatrix_slides.pptx \[slides\]] [http://www.wisdom.weizmann.ac.il/~oded/MC/281.html \[Oded's choice\]] {{<span class="title" onclick="toggle('summary-rigid-matrix')" style="cursor:pointer; u:hover">
+- *Efficient Construction of Rigid Matrices Using an NP Oracle* [documents/FOCS_2019_rigidmatrix.pdf \[pdf\]] [slides/FOCS_2019_rigidmatrix_slides.pptx \[slides\]] [http://www.wisdom.weizmann.ac.il/~oded/MC/281.html \[Oded's choice\]] {{<span class="title" onclick="toggle('summary-rigid-matrix')" style="cursor:pointer; u:hover">
 <font color=red>
 [short highlight]
 </font>
@@ -215,13 +215,13 @@ Lijie Chen, [https://sites.google.com/site/roeitell/ Roei Tell]. /Symposium on t
 
 === *Other Topics*
 
-- (Quantum Supremacy) *Complexity-Theoretic Foundations of Quantum Supremacy Experiments* [http://eccc.hpi-web.de/report/2016/200/ \[eccc\]] [https://arxiv.org/abs/1612.05903 \[arxiv\]] [CCC_2017_QuantumSupremacy.pdf \[slides\]]\n
+- (Quantum Supremacy) *Complexity-Theoretic Foundations of Quantum Supremacy Experiments* [http://eccc.hpi-web.de/report/2016/200/ \[eccc\]] [https://arxiv.org/abs/1612.05903 \[arxiv\]] [documents/CCC_2017_QuantumSupremacy.pdf \[slides\]]\n
 [https://www.scottaaronson.com/ Scott Aaronson], Lijie Chen. /Computational Complexity Conference/ (CCC 2017). {{<font color=red>}}Invited to the Toc Special Issue for CCC 2017{{</font>}}\n
 
 - (Streaming Lower Bounds) *Almost Optimal Super-Constant-Pass Streaming Lower Bounds for Reachability* [https://eccc.weizmann.ac.il/report/2021/027/ \[eccc]]\n
 Lijie Chen, Gillat Kol, Dmitry Paramonov, Raghuvansh Saxena, Zhao Song, [https://www.cs.princeton.edu/~hy2/ Huacheng Yu]. /Symposium on the Theory of Computing/ (STOC 2021). {{<font color=red>}}Invited to the SICOMP Special Issue for STOC 2021{{</font>}}\n
 
-- (Fine-grained Complexity) *On The Hardness of Approximate and Exact (Bichromatic) Maximum Inner Product* [https://eccc.weizmann.ac.il/report/2018/026/ \[eccc\] ] [https://arxiv.org/abs/1802.02325 \[arxiv\]] [CCC_2018_MaxIP.pptx \[slides\] ] [https://theoryofcomputing.org/articles/v016a004/ \[journal version\]] {{<span class="title" onclick="toggle('summary-maxip')" style="cursor:pointer; u:hover">
+- (Fine-grained Complexity) *On The Hardness of Approximate and Exact (Bichromatic) Maximum Inner Product* [https://eccc.weizmann.ac.il/report/2018/026/ \[eccc\] ] [https://arxiv.org/abs/1802.02325 \[arxiv\]] [slides/CCC_2018_MaxIP.pptx \[slides\] ] [https://theoryofcomputing.org/articles/v016a004/ \[journal version\]] {{<span class="title" onclick="toggle('summary-maxip')" style="cursor:pointer; u:hover">
 <font color=red>
 [short highlight]
 </font>
@@ -232,7 +232,7 @@ Under $\mathsf{SETH}$, we give a characterization on when approxiamte Boolean Ma
 </span>}}
 Lijie Chen. /Computational Complexity Conference/ (CCC 2018). {{<font color=red>}} Invited to the Toc Special Issue for CCC 2018{{</font>}}\n
 
-- (Differential Privacy) *On Distributed Differential Privacy and Counting Distinct Elements* [https://arxiv.org/abs/2009.09604 \[arxiv]] [countDistinct-long.pptx \[long slides\]] [countDistinct-short.pptx \[short slides\]] {{<span onclick="toggle('summary-dp-2')" style="cursor:pointer; u:hover; white-space:nowrap">
+- (Differential Privacy) *On Distributed Differential Privacy and Counting Distinct Elements* [https://arxiv.org/abs/2009.09604 \[arxiv]] [slides/countDistinct-long.pptx \[long slides\]] [slides/countDistinct-short.pptx \[short slides\]] {{<span onclick="toggle('summary-dp-2')" style="cursor:pointer; u:hover; white-space:nowrap">
 <font color=red>
 [summary]
 </font>

@@ -6,6 +6,27 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Talks</title>
+        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
+        </script>
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          showProcessingMessages: false,
+          TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+          function toggle(pId) {
+            var e=document.getElementById(pId);
+            if (!e) return;
+            if (e.style.display == "none") {
+              e.style.display = "block"
+            } else {
+              e.style.display = "none"
+            }
+            return;
+          }
+        </script>
 </head>
 <body>
 <script type="text/javascript">
@@ -24,6 +45,7 @@ try {
 <div class="menu-item"><a href="index.html" class="current">Home</a></div>
 <div class="menu-item"><a href="papersYear.html">Publications&nbsp;(by&nbsp;Years)</a></div>
 <div class="menu-item"><a href="papersCat.html">Publications&nbsp;(by&nbsp;Categories)</a></div>
+<div class="menu-item"><a href="aboutme.html">About&nbsp;Me</a></div>
 <div class="menu-item"><a href="talks.html">Talks</a></div>
 </td>
 <td id="layout-content">
@@ -35,7 +57,7 @@ try {
 <li><p><b>Sharp Threshold Results for Computational Complexity</b><br />
 Lijie Chen, Ce Jin, Ryan Williams<br />
 <i>Oxford-Warwick complexity Meetings</i> (2020)<br />
-<a href="sharp-threshold.pptx" target=&ldquo;blank&rdquo;>[slides]</a> <br />
+<a href="slides/sharp-threshold.pptx" target=&ldquo;blank&rdquo;>[slides]</a> <br />
 </p>
 </li>
 </ul>
@@ -44,7 +66,7 @@ Lijie Chen, Ce Jin, Ryan Williams<br />
 Lijie Chen, Hanlin Ren<br />
 <i>Combinatorics and TCS seminar, the University of Chicago</i><br />
 <i>Lower Bounds in Computational Complexity Reunion, the Simons Institute for the Theory of Computing</i><br />
-<a href="Reunion_Talk.pptx" target=&ldquo;blank&rdquo;>[slides]</a> <br />
+<a href="slides/Reunion_Talk.pptx" target=&ldquo;blank&rdquo;>[slides]</a> <br />
 </p>
 </li>
 </ul>
@@ -52,14 +74,14 @@ Lijie Chen, Hanlin Ren<br />
 <li><p><b>Efficient Construction of Rigid Matrices Using an NP Oracle</b><br />
 Josh Alman, Lijie Chen<br />
 <i>Foundations of Computer Science</i> (FOCS 2019)<br />
-<a href="FOCS_2019_rigidmatrix_slides.pptx" target=&ldquo;blank&rdquo;>[slides]</a> <br />
+<a href="slides/FOCS_2019_rigidmatrix_slides.pptx" target=&ldquo;blank&rdquo;>[slides]</a> <br />
 </p>
 </li>
 </ul>
 <ul>
 <li><p><b>Recent Developments in Fine-Grained Complexity via Communication Complexity</b><br />
 Tsinghua University 2019<br />
-<a href="Tsinghua2019-Fine-Grained.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="slides/Tsinghua2019-Fine-Grained.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -67,7 +89,7 @@ Tsinghua University 2019<br />
 <li><p><b>Stronger Connections Between Circuit Analysis and Circuit Lower Bounds, via PCPs of Proximity</b><br />
 Lijie Chen, <a href="https://people.csail.mit.edu/rrw/" target=&ldquo;blank&rdquo;>Ryan Williams</a><br />
 CCC 2019<br />
-<a href="CCC_2019_PCPP.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="slides/CCC_2019_PCPP.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -75,7 +97,7 @@ CCC 2019<br />
 <li><p><b>Bootstrapping Results for Threshold Circuits &ldquo;Just Beyond&rdquo; Known Lower Bounds</b><br />
 Lijie Chen, <a href="https://sites.google.com/site/roeitell/" target=&ldquo;blank&rdquo;>Roei Tell</a><br />
 <i>Symposium on the Theory of Computing</i> (STOC 2019)<br />
-<a href="STOC_2019_TC0_slides.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="documents/STOC_2019_TC0_slides.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -86,7 +108,7 @@ Theory Seminar of UT Austin<br />
 Harvard TGINF<br />
 CMU Theory Lunch<br />
 <i>Foundations of Computer Science</i> (FOCS 2019)<br />
-<a href="Austin-NQP-Average-Case-Lower-Bound.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="slides/Austin-NQP-Average-Case-Lower-Bound.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -94,7 +116,7 @@ CMU Theory Lunch<br />
 <li><p><b>Classical Algorithms from Quantum and Arthur-Merlin Communication Protocols</b><br />
 Lijie Chen, Ruosong Wang<br />
 ITCS 2019<br />
-<a href="ITCS_2019_CC_PPT.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="slides/ITCS_2019_CC_PPT.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -102,7 +124,7 @@ ITCS 2019<br />
 <li><p><b>An Equivalence Class for Orthogonal Vectors</b><br />
 Lijie Chen, <a href="https://people.csail.mit.edu/rrw/" target=&ldquo;blank&rdquo;>Ryan Williams</a><br />
 SODA 2019<br />
-<a href="SODA_2019_OV_PPT.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="slides/SODA_2019_OV_PPT.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -110,7 +132,7 @@ SODA 2019<br />
 <li><p><b>Recent Structure Lemmas for Depth-Two Threshold Circuits</b><br />
 Lijie Chen<br />
 Simons Institute for the Theory of Computing 2018<br />
-<a href="Simons-2018-THRTHR.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="slides/Simons-2018-THRTHR.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -119,7 +141,7 @@ Simons Institute for the Theory of Computing 2018<br />
 Lijie Chen<br />
 CCC 2018<br />
 Algorithms & Complexity Seminar, MIT<br />
-<a href="CCC_2018_MaxIP.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="slides/CCC_2018_MaxIP.pptx" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -128,7 +150,7 @@ Algorithms & Complexity Seminar, MIT<br />
 Adam Bouland, Lijie Chen, Dhiraj Holden, Justin Thaler, Prashant Nalini Vasudevan<br /> 
 FOCS 2017<br />
 Algorithms & Complexity Seminar, MIT<br />
-<a href="FOCS_2017_SZKPP.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="documents/FOCS_2017_SZKPP.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -136,7 +158,7 @@ Algorithms & Complexity Seminar, MIT<br />
 <li><p><b>Complexity-Theoretic Foundations of Quantum Supremacy Experiments</b><br />
 Scott Aaronson, Lijie Chen<br />
 CCC 2017<br />
-<a href="CCC_2017_QuantumSupremacy.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="documents/CCC_2017_QuantumSupremacy.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -144,7 +166,7 @@ CCC 2017<br />
 <li><p><b>Adaptivity vs Postselection</b><br /> 
 Lijie Chen<br />
 ISAAC 2016<br />
-<a href="ISAAC_2016_AdaPost.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="documents/ISAAC_2016_AdaPost.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -152,7 +174,7 @@ ISAAC 2016<br />
 <li><p><b>Pure Exploration of Multi-armed Bandit Under Matroid Constraints</b><br />
 Lijie Chen, Anupum Gupta, Jian Li<br />
 COLT 2016<br />
-<a href="COLT_2016_Matroid.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
+<a href="documents/COLT_2016_Matroid.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br />
 </p>
 </li>
 </ul>
@@ -160,12 +182,12 @@ COLT 2016<br />
 <li><p><b>Open Problem: Best Arm Identification: Almost Instance-Wise Optimality and the Gap Entropy Conjecture</b><br /> 
 Lijie Chen, Jian Li<br /> 
 COLT 2016 Open Problem<br />
-<a href="COLT_2016_OpenProblem.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br /></p>
+<a href="documents/COLT_2016_OpenProblem.pdf" target=&ldquo;blank&rdquo;>[slides]</a><br /></p>
 </li>
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2024-11-12 22:04:03 Pacific Standard Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2025-09-25 14:57:24 PDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 (<a href="talks.jemdoc">source</a>)
 </div>
 </div>

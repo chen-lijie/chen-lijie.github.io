@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>My Projects</title>
+<title>Open Problems</title>
         <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
         </script>
         <script type="text/x-mathjax-config">
@@ -50,12 +50,55 @@ try {
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>My Projects</h1>
+<h1>Open Problems</h1>
+<div id="subtitle">Here are some open problems I am super interested about, and have/had been working on.
 </div>
+</div>
+<div class="infoblock">
+<div class="blockcontent">
+<h2>Hardness of Exact Integer Bichromatic Maximum Inner Product</h2>
+<ul>
+<li><p>Problem: Suppose you are given two sets \(A,B\) of \(n\) vectors from \( \mathbb{Z}^d \), and want to compute \( \max_{(a,b) \in A \times B} a \cdot b \). Show that this problem requires \(n^{2 - o(1)}\) time for super constant \(d\).
+</p>
+</li>
+</ul>
+<ul>
+<li><p>History &amp; Motivation:
+</p>
+</li>
+</ul>
+<ul>
+<li><p>What is Known: In <a href="https://eccc.weizmann.ac.il/report/2018/026/" target=&ldquo;blank&rdquo;>This paper</a>, I showed under SETH, this problem requires \(n^{2-o(1)}\) time when \(d=2^{O(\log^* n)}\). The current best algorithm runs in \(n^{2 - 1/O(d)}\) time, only truly-subquadratic for constant \(d\).
+</p>
+</li>
+<li><p>Can we strength the \(2^{O(\log^* n)}\) lower bound to an \(\omega(1)\) one?
+</p>
+</li>
+</ul>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<h2>Gap Entropy Conjecture for Best-1-Arm</h2>
+<ul>
+<li><p>Problem: You are given \(n\) Gaussian distributions with unit variance and known means. In one round you can choose a distribution and get a sample from it, you want to determine the distribution with the highest mean with probability at least \(1 - \delta\), while using as few samples as possible. What is the optimal sample complexity?
+</p>
+</li>
+</ul>
+<ul>
+<li><p>History &amp; Motivation:
+</p>
+</li>
+</ul>
+<ul>
+<li><p>What is Known: 
+</p>
+</li>
+</ul>
+</div></div>
 <div id="footer">
 <div id="footer-text">
-Page generated 2022-05-28 17:46:59 东部夏令时, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
-(<a href="projects.jemdoc">source</a>)
+Page generated 2025-09-25 14:46:27 PDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+(<a href="openproblem.jemdoc">source</a>)
 </div>
 </div>
 </td>
