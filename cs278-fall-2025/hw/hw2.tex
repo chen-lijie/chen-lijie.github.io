@@ -1,0 +1,140 @@
+
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xspace}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{hint}{Hint}
+
+% Common complexity classes / notation
+\newcommand{\DTIME}{\text{DTIME}}
+\newcommand{\NTIME}{\text{NTIME}}
+\newcommand{\TIME}{\text{TIME}}
+\newcommand{\SPACE}{\text{SPACE}}
+\newcommand{\NSPACE}{\text{NSPACE}}
+\newcommand{\SIZE}{\text{SIZE}}
+\newcommand{\NP}{\text{NP}}
+\newcommand{\NEXP}{\text{NEXP}}
+\newcommand{\coNEXP}{\text{coNEXP}}
+\newcommand{\ZPP}{\text{ZPP}}
+\newcommand{\TCone}{\text{TC}^1}
+\newcommand{\poly}{\mathrm{poly}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\oracle}{\mathcal{O}}
+
+% Header setup
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{CS 278: Computational Complexity Theory}
+\rhead{Fall 2025}
+\lfoot{Name: \underline{\hspace{3cm}}}
+\rfoot{Page \thepage}
+
+\title{CS 278: Computational Complexity Theory\\
+       Homework 2}
+\author{Due: \textbf{October 24th, 2025}}
+\date{Fall 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\textbf{Instructions:}
+
+\begin{itemize}
+    \item Collaboration is allowed but solutions must be written independently. List collaborators and external resources.
+    \item Write your solutions in \LaTeX\xspace and submit a single PDF by email to \texttt{lijiechen@berkeley.edu} with subject ``CS 278 - Homework 2 -- [Your Name]''.
+    \item Name your file \texttt{CS278-HW2-[YourName].pdf}. \textbf{Deadline:} 11:59pm Pacific Time October 24th, 2025.
+    \item Late submissions lose \textbf{10\%} per day (e.g., three days late $\rightarrow 0.9^3$ of your score).
+    \item This homework has 4 problems, each with multiple parts, totaling \textbf{160 points}. As in HW1, our course policy on homework aggregation applies unchanged.
+\end{itemize}
+\end{center}
+
+\vspace{0.5cm}
+
+\newpage
+
+\section{Problem 1 (40 pts): A circuit lower bound for quadratic space}
+
+Show that languages decidable in quadratic space do not admit linear-size circuits.
+
+\paragraph{Statement.}
+Prove that $\SPACE[n^2] \not\subseteq \SIZE(O(n))$. In other words, there is a language $L \in \SPACE[n^2]$ such that every Boolean circuit family computing $L$ on inputs of length $n$ has size $\omega(n)$ for all sufficiently large $n$.
+
+\newpage
+
+\section{Problem 2 (40 pts): \texorpdfstring{$\NEXP \subseteq \coNEXP/_{n+1}$}{NEXP ⊆ coNEXP/{n+1}}}
+
+\paragraph{Statement.}
+Prove that $\NEXP \subseteq \coNEXP/_{n+1}$. In other words, for every language $L \in \NEXP$, prove that there exists an advice function $a(n) \in \{0,1\}^{n+1}$ such that there exists a coNEXP machine $M$ that, for every $n \in \mathbb{N}$, given the correct advice $a(n)$, $M$ computes $L$ on all $n$-bit inputs.
+
+\newpage
+
+\section{Problem 3 (40 pts): Prove \texorpdfstring{$\mathrm{CL} \subseteq \ZPP$}{CL ⊆ ZPP}}
+
+The class $\mathrm{CL}$ (catalytic logspace) allows an algorithm logarithmic \emph{clean} space and polynomially many \emph{dirty} bits that must be restored at the end. Show that every $L \in \mathrm{CL}$ has a zero-error expected-polynomial-time algorithm.
+
+\paragraph{Definition of ZPP.}
+The complexity class $\ZPP$ (Zero-error Probabilistic Polynomial time) consists of all languages $L$ for which there exists a probabilistic polynomial-time Turing machine $M$ such that:
+\begin{enumerate}
+    \item For every input $x$, $M(x)$ outputs either $0$, $1$, or $\bot$ (``don't know'').
+    \item If $x \in L$, then $\Pr[M(x) = 1] \geq \frac{1}{2}$ and $\Pr[M(x) = 0] = 0$.
+    \item If $x \notin L$, then $\Pr[M(x) = 0] \geq \frac{1}{2}$ and $\Pr[M(x) = 1] = 0$.
+    \item The expected running time of $M$ on any input is polynomial.
+\end{enumerate}
+
+Equivalently, $\ZPP$ is the class of languages that can be decided by Las Vegas algorithms: randomized algorithms that always give the correct answer when they terminate, and have polynomial expected running time.
+
+\paragraph{Statement.}
+Prove that $\mathrm{CL} \subseteq \ZPP$.
+
+
+\newpage
+
+\section{Problem 4 (40 pts): Prove that \texorpdfstring{$\TCone \subseteq \mathrm{CL}$}{TC$^1$ ⊆ CL}}
+
+In the class we sketch the high-level idea of the proof that $\TCone \subseteq \mathrm{CL}$. In this problem, you will complete the proof.
+
+\paragraph{Statement.}
+Prove that $\TCone \subseteq \mathrm{CL}$. You should give a complete register program for the $\TCone$ circuit and prove it's correctness.
+
+\newpage
+
+\section*{Optional references and context}
+For accessible background on catalytic logspace and the toggling construction, see:
+\begin{itemize}
+    \item Nathan Sheffield, \emph{A quick-and-dirty intro to CL}.
+    \item Ian Mertz, \emph{Reusing Space: Techniques and Open Problems}.
+\end{itemize}
+
+\vfill
+\noindent\textbf{(Optional) Solution placeholders}\\
+You may use the following headings for your writeup; remove them if not needed.
+
+\newpage
+\section*{Solution to Problem 1}
+
+\newpage
+\section*{Solution to Problem 2}
+
+\newpage
+\section*{Solution to Problem 3}
+
+\newpage
+\section*{Solution to Problem 4}
+
+\end{document}
