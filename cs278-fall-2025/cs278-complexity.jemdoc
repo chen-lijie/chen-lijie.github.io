@@ -184,23 +184,28 @@ Reading: <a href="https://hanlin-ren.github.io/files/pdf/CHLR_S2E_journal.pdf">h
 
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">10/14 Tue</td>
-<td style="padding: 8px; border: 1px solid #ddd;">Randomized complexity and derandomization: an overview</td>
+<td style="padding: 8px; border: 1px solid #ddd;">Randomized complexity and derandomization: an overview<br>
+Reading: Chapter 7 of Arora-Barak</td>
 </tr>
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">10/16 Thu</td>
-<td style="padding: 8px; border: 1px solid #ddd;">NW PRG and derandomization from circuit lower bounds</td>
+<td style="padding: 8px; border: 1px solid #ddd;">NW PRG and derandomization from circuit lower bounds<br>
+Reading: Chapter 20.2 of Arora-Barak</td>
 </tr>
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">10/21 Tue</td>
-<td style="padding: 8px; border: 1px solid #ddd;">Derandomization from uniform hardness, Part (1)</td>
+<td style="padding: 8px; border: 1px solid #ddd;">Derandomization from uniform hardness, Part (1)<br>
+Reading: Chapter 20.3 of Arora-Barak</td>
 </tr>
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">10/23 Thu</td>
-<td style="padding: 8px; border: 1px solid #ddd;">Derandomization from uniform hardness, Part (2)</td>
+<td style="padding: 8px; border: 1px solid #ddd;">Derandomization from uniform hardness, Part (2)<br>
+Reading: Section 2 of <a href="https://eccc.weizmann.ac.il/report/2021/080/">https://eccc.weizmann.ac.il/report/2021/080/</a></td>
 </tr>
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">10/28 Tue</td>
-<td style="padding: 8px; border: 1px solid #ddd;">Construction of Primes</td>
+<td style="padding: 8px; border: 1px solid #ddd;">Construction of Primes<br>
+Reading: slides <a href="https://chen-lijie.github.io/slides/pseudodeterministic-construction.pptx">https://chen-lijie.github.io/slides/pseudodeterministic-construction.pptx</a></td>
 </tr>
 
 <tr style="border-bottom: 1px solid #ddd; height: 60px;">
@@ -209,7 +214,8 @@ Reading: <a href="https://hanlin-ren.github.io/files/pdf/CHLR_S2E_journal.pdf">h
 
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">10/30 Thu</td>
-<td style="padding: 8px; border: 1px solid #ddd;">IP = PSPACE</td>
+<td style="padding: 8px; border: 1px solid #ddd;">IP = PSPACE<br>
+Reading: Chapter 8.3 of Arora-Barak</td>
 </tr>
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">11/04 Tue</td>
@@ -285,7 +291,7 @@ Reading: <a href="https://hanlin-ren.github.io/files/pdf/CHLR_S2E_journal.pdf">h
 - *HW1:* Due September 26 (Friday)
 [hw/hw1.pdf hw1] [https://hackmd.io/@HOPb9aKSTwipv9buI_Gfnw/HJe0H9g3ex hints] [hw/hw1_sol.pdf hw1_sol]
 
-- *HW2:* Due October 24 (Thursday)
+- *HW2:* Due October 24 (Friday)
 [hw/hw2.pdf hw2] [hw/hw2.tex latex-template]
 
 - *HW3:* Due November 20 (Thursday)
