@@ -238,14 +238,12 @@ Reading: Chapter 8.3 of Arora-Barak</td>
 <td style="padding: 8px; border: 1px solid #ddd;">11/13 Thu</td>
 <td style="padding: 8px; border: 1px solid #ddd;">Bounded Arithmetic: an overview</td>
 </tr>
-
-<tr style="border-bottom: 1px solid #ddd; height: 60px;">
-<td colspan="2" style="padding: 8px; border: 1px solid #ddd; font-weight: bold; font-size: 1.1em;">Complexity Theory for Modern Machine Learning Architecture</td>
-</tr>
-
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">11/18 Tue</td>
-<td style="padding: 8px; border: 1px solid #ddd;">The complexity of Transformer, State-space-model</td>
+<td style="padding: 8px; border: 1px solid #ddd;">Guest Lecture on Fine-grained Complexity by Ce Jin</td>
+</tr>
+<tr style="border-bottom: 1px solid #ddd; height: 60px;">
+<td colspan="2" style="padding: 8px; border: 1px solid #ddd; font-weight: bold; font-size: 1.1em;">Complexity Theory for Modern Machine Learning Architecture</td>
 </tr>
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 8px; border: 1px solid #ddd;">11/20 Thu</td>
