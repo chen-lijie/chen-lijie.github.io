@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Theoretical Aspects of Transformers (Complete)</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/dracula.min.css" id="theme">
+
+    <style>
+        /* Global Layout Fixes */
+        .reveal .slides section { 
+            height: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .reveal h2 { margin-top: 0px; margin-bottom: 20px; font-size: 2em; }
+        .reveal h3 { margin-top: 10px; margin-bottom: 20px; font-size: 1.5em; }
+        
+        /* Layout Helpers */
+        .container { display: flex; justify-content: center; gap: 20px; align-items: flex-start; }
+        .col { flex: 1; display: flex; flex-direction: column; align-items: center; }
+        .box { flex: 1; border: 2px solid #bd93f9; padding: 15px; border-radius: 10px; background: rgba(255,255,255,0.05); margin: 0 5px; }
+        
+        /* --- STYLES FOR DEMOS --- */
+        .matrix-wrapper { text-align: center; }
+        .matrix { display: grid; grid-template-columns: repeat(4, 35px); grid-template-rows: repeat(4, 35px); gap: 2px; margin: 5px auto; }
+        .cell-input { width: 35px; height: 35px; background: #444; border: 1px solid #666; color: #fff; text-align: center; font-size: 0.5em; padding: 0; margin: 0; font-family: monospace; }
+        .cell { width: 35px; height: 35px; background: #444; border: 1px solid #666; display: flex; align-items: center; justify-content: center; font-size: 0.5em; color: white; transition: background 0.2s; }
+        .active { background: #50fa7b; } .masked { background: #ff5555; opacity: 0.4; } 
+
+        .bar-container { display: flex; align-items: flex-end; height: 60px; gap: 5px; border-bottom: 1px solid #fff; padding-bottom: 2px;}
+        .bar { width: 20px; background: #bd93f9; transition: height 0.2s, background 0.2s; }
+        .vector-visual { width: 100px; height: 100px; border: 1px solid #666; position: relative; background: #222; border-radius: 50%; }
+        .arrow { position: absolute; top: 50%; left: 50%; height: 2px; transform-origin: 0 50%; transition: transform 0.1s, width 0.1s; }
+
+        #bp-container { width: 100%; height: 300px; background: rgba(0,0,0,0.2); border-radius: 10px; position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden; margin-top: 10px; }
+        svg text { fill: #fff; font-family: monospace; font-size: 12px; user-select: none; }
+        .bp-node { fill: #444; stroke: #666; stroke-width: 1px; }
+
+        /* Controls & Text */
+        .control-panel { background: rgba(0,0,0,0.3); padding: 8px; border-radius: 8px; margin-bottom: 10px; display: flex; justify-content: center; gap: 20px; align-items: center; font-size: 0.6em; }
+        input[type=range], input[type=checkbox] { vertical-align: middle; accent-color: #bd93f9; }
+        
+        .theorem-block { text-align: left; background: rgba(189, 147, 249, 0.1); border-left: 4px solid #bd93f9; padding: 8px 12px; margin-top: 10px; font-size: 0.65em; }
+        .math-def { background: rgba(0,0,0,0.3); padding: 5px 10px; border-radius: 5px; margin: 10px 0; font-size: 0.8em; }
+        p { font-size: 0.8em; margin-bottom: 8px; }
+        .citation { font-size: 0.5em; color: #8be9fd; font-style: italic; margin-top: 5px; }
+
+        /* Mermaid */
+        .mermaid { background: transparent; display: flex; justify-content: center; font-size: 0.8em; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h3>Theoretical Aspects of Transformers</h3>
+            <p style="color: #bd93f9;">Precision, Depth, Encoders vs. Decoders, & CoT</p>
+            <div style="font-size: 0.6em; margin-top: 2rem;">A Complexity Theory Perspective</div>
+        </section>
+
+        <section>
+            <section>
+                <h2>Topic 0: Background</h2>
+                <p>Formalizing the Transformer</p>
+            </section>
+
+            <section>
+                <h3>1. The Layer Function</h3>
+                <p>Each layer maps a matrix to a matrix:</p>
+                <div class="math-def">$$ \Phi_i :\mathbb{R}^{n\times d} \to \mathbb{R}^{n\times d} $$</div>
+                <p>Model Composition:</p>
+                <div class="math-def">$$ \Phi = \Phi_L \circ \Phi_{L-1} \circ \cdots \circ \Phi_1 $$</div>
+            </section>
+
+            <section>
+                <h3>2. Tokens vs. Vectors</h3>
+                <div class="mermaid">
+                    graph LR
+                    I["Tokens {0,1}"] -->|Embedding| E["Vectors R^d"]
+                    E --> P["Phi: Layers"]
+                    P -->|Unembedding| O["Tokens {0,1}"]
+                </div>
+            </section>
+
+            <section>
+                <h3>3. Two Types of Layers</h3>
+                <div class="container">
+                    <div class="box fragment">
+                        <h4 style="color: #ff79c6">Local Layers (MLP)</h4>
+                        <hr>
+                        <p style="font-size:0.7em">Applies the <strong>same</strong> $\mathsf{TC}^0$ circuit to every vector independently.</p>
+                    </div>
+                    <div class="box fragment">
+                        <h4 style="color: #8be9fd">Global Layers (Attention)</h4>
+                        <hr>
+                        <p style="font-size:0.7em">Transfers information <strong>between</strong> vectors (Routing).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>4a. Attentin (Q-K-V associative memory)</h3>
+                <div class="container">
+                    <div class="box fragment"><h4 style="color:#ff79c6">Query ($q$)</h4><p style="font-size:0.5em">What I wnat to know</p></div>
+                    <div class="box fragment"><h4 style="color:#8be9fd">Key ($k$)</h4><p style="font-size:0.5em">The key for an item</p></div>
+                    <div class="box fragment"><h4 style="color:#50fa7b">Value ($v$)</h4><p style="font-size:0.5em">The content of an item</p></div>
+                </div>
+                <div class="theorem-block">
+                    $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d}}\right)V $$
+                </div>
+            </section>
+
+            <section>
+                <h3>4b. Interactive QKV Mechanism</h3>
+                <div class="control-panel">
+                    <label>Adjust Query Vector:</label>
+                    Angle: <input type="range" id="qAngle" min="0" max="360" value="45" oninput="updateQKV()">
+                </div>
+                <div class="container">
+                    <div class="col">
+                        <div id="vectorView" class="vector-visual">
+                            <div class="arrow" style="width: 40px; background: #ff5555; transform: rotate(0deg);"></div>
+                            <div class="arrow" style="width: 40px; background: #50fa7b; transform: rotate(120deg);"></div>
+                            <div class="arrow" style="width: 40px; background: #8be9fd; transform: rotate(240deg);"></div>
+                            <div id="qArrow" class="arrow" style="width: 45px; background: white; height: 3px; z-index:10;"></div>
+                        </div>
+                        <p style="font-size:0.5em; margin-top:5px;">Dot Product Match</p>
+                    </div>
+                    <div class="col" style="justify-content: center;"><span style="font-size:1.5em">&rarr;</span></div>
+                    <div class="col">
+                        <div class="bar-container">
+                            <div id="bar1" class="bar" style="background:#ff5555"></div><div id="bar2" class="bar" style="background:#50fa7b"></div><div id="bar3" class="bar" style="background:#8be9fd"></div>
+                        </div>
+                        <p style="font-size:0.5em;">Softmax Weights</p>
+                    </div>
+                    <div class="col">
+                        <div id="resultColor" style="width:50px; height:50px; border-radius:50%; border:2px solid white;"></div>
+                        <p style="font-size:0.5em;">Output (Mixed Value)</p>
+                    </div>
+                </div>
+                <div class="theorem-block">
+                    $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d}}\right)V $$
+                </div>
+            </section>
+
+            <section>
+                <h3>4c. Matrix Attention Demo</h3>
+                <div class="control-panel">
+                    <div><label>Causal Mask:</label> <input type="checkbox" id="maskToggle" onchange="updateAttentionDemo()"></div>
+                    <div><label>Temp:</label> <input type="range" id="tempSlider" min="0.1" max="5.0" step="0.1" value="1.0" oninput="updateAttentionDemo()"></div>
+                </div>
+                <div class="container">
+                    <div class="matrix-wrapper">
+                        <p style="font-size: 0.5em; color: #bd93f9;">Raw Logits (Editable)</p>
+                        <div id="logitGrid" class="matrix"></div>
+                    </div>
+                    <div style="display:flex; flex-direction:column; justify-content:center;"><span style="font-size: 1.5em;">&rarr;</span></div>
+                    <div class="matrix-wrapper">
+                        <p style="font-size: 0.5em; color: #50fa7b;">Attn Weights</p>
+                        <div id="attnGrid" class="matrix"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>5. Uniformity</h3>
+                <div class="theorem-block">
+                    <strong>The Uniform Algorithm View:</strong><br>
+                    By fixing parameters, the Transformer becomes a uniform algorithm working on inputs of any length.
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Part 1: Complexity Upper Bounds</h2>
+            </section>
+
+            <section>
+                <h3>The Complexity Hierarchy</h3>
+                <div class="mermaid">
+                    graph LR
+                    A["Constant Bit"] -->|is in| B("AC0")
+                    C["Log Bit"] -->|is in| D("TC0")
+                    D -.->|cannot solve| E["NC1 Complete"]
+                    B -.->|cannot solve| F["Parity"]
+                </div>
+            </section>
+            
+            <section>
+                <h3>Visualizing $\mathsf{NC}^1$: Branching Programs</h3>
+                <p style="font-size:0.6em; margin-bottom:5px;">
+                    Any $\mathsf{NC}^1$ computation can be visualized as a width-5 Branching Program over $S_5$.
+                </p>
+                <div id="bp-container">
+                    <svg id="bp-svg" width="800" height="300" viewBox="0 0 800 300"></svg>
+                </div>
+                <div class="theorem-block" style="margin-top: 5px; padding: 5px;">
+                    <strong>Interactive:</strong> Click labels (e.g., "Id", "(1 2)") to change the permutation.<br>
+                    Follow the <span style="color:#ff5555">colored lines</span> to track state evolution.
+                </div>
+            </section>
+
+            <section>
+                <h3>Barrington's Theorem (1989)</h3>
+                <div class="box" style="background: rgba(189, 147, 249, 0.1); border-color: #ff79c6;">
+                    <h4 style="color: #ff79c6;">The Statement</h4>
+                    <p style="font-size: 0.8em;">
+                        $\mathsf{NC}^1$ is exactly equivalent to width-5 branching programs over $S_5$.
+                    </p>
+                    <div class="math-def" style="font-size: 1.2em; text-align: center;">
+                        $$ \mathsf{NC}^1 = \mathsf{BWBP}_5 $$
+                    </div>
+                </div>
+                <div class="container" style="margin-top:30px;">
+                    <div class="box fragment">
+                        <h4 style="font-size:0.8em">Implication</h4>
+                        <p style="font-size:0.6em">Computing product of $S_5$ elements is <strong>complete</strong> for $\mathsf{NC}^1$.</p>
+                    </div>
+                    <div class="box fragment">
+                        <h4 style="font-size:0.8em">Limit</h4>
+                        <p style="font-size:0.6em">Standard Transformers (const-depth) <strong>cannot</strong> solve this.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Part 2: Capabilities (No CoT)</h2>
+                <p>Think-dot-by-dot & Log-Depth</p>
+            </section>
+
+            <section>
+                <h3>Hidden Computation: "Think Dot by Dot"</h3>
+                <p style="font-size: 0.8em;">Can meaningless tokens provide computational power?</p>
+                
+                <div class="mermaid">
+                    graph LR
+                    I[Input] --> F1[...] --> F2[...] --> F3[...] --> O[Answer]
+                    style F1 fill:#444,stroke:#666,color:#aaa
+                    style F2 fill:#444,stroke:#666,color:#aaa
+                    style F3 fill:#444,stroke:#666,color:#aaa
+                    style O fill:#50fa7b,color:#000
+                </div>
+
+                <div class="container" style="margin-top:20px;">
+                    <div class="box fragment">
+                        <h4 style="font-size:0.8em; color:#ff79c6">The Finding</h4>
+                        <p style="font-size:0.6em">Transformers can use filler tokens ("...") to solve hard tasks (e.g., 3SUM) they can't solve directly.</p>
+                    </div>
+                    <div class="box fragment">
+                        <h4 style="font-size:0.8em; color:#8be9fd">Implication</h4>
+                        <p style="font-size:0.6em">Benefit of CoT is partly just <strong>extra "depth"</strong> (time to think), not just semantic reasoning.</p>
+                    </div>
+                </div>
+                <p class="citation">[Pfau-Merrill-Bowman’24] "Let's Think Dot by Dot"</p>
+            </section>
+
+            <section>
+                <h3>The Power of Depth: $\Theta(\log n)$</h3>
+                <p>If we increase depth to $O(\log n)$, we unlock $\mathsf{NC}^1$.</p>
+                <div class="container">
+                    <div style="flex:1">
+                        <ul>
+                            <li><strong>Reachability:</strong> Solved via matrix doubling ($A^2, A^4...$).</li>
+                            <li><strong>Regex:</strong> Solved via parallel DFA state composition.</li>
+                        </ul>
+                    </div>
+                    <div style="flex:1" class="mermaid">
+                        graph TD
+                        S((s)) --> A
+                        A --> B
+                        B --> T((t))
+                        S -.->|Layer 1| A
+                        S -.->|Layer 2| B
+                        S -.->|Layer 3| T
+                    </div>
+                </div>
+                <p class="citation">[Merrill-Sabharwal’25]</p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Part 3: Encoder vs Decoder</h2>
+                <p>Communication Protocols & Trade-offs</p>
+            </section>
+
+            <section>
+                <h3>Encoders = Massively Parallel Computation</h3>
+                <p style="font-size:0.8em">Connecting Transformers to Distributed Computing (MPC).</p>
+                
+                <div class="box" style="padding:10px;">
+                    <table style="font-size:0.7em; width:100%; color:white;">
+                        <tr style="border-bottom:1px solid #666;">
+                            <th style="color:#ff79c6">Transformer</th>
+                            <th>$\longleftrightarrow$</th>
+                            <th style="color:#8be9fd">MPC Model</th>
+                        </tr>
+                        <tr><td>Token $x_i$</td><td>$\leftrightarrow$</td><td>Machine $M_i$</td></tr>
+                        <tr><td>Layer</td><td>$\leftrightarrow$</td><td>Communication Round</td></tr>
+                        <tr><td>Attention</td><td>$\leftrightarrow$</td><td>Message Passing</td></tr>
+                    </table>
+                </div>
+
+                <div class="theorem-block">
+                    <strong>Theorem:</strong> Const-layer Transformers can simulate and be simulated by Const-round MPC.
+                    <br>
+                    $\implies$ <strong>Log-depth Transformers</strong> can solve Graph Connectivity (which is hard for const-round MPC/Transformers).
+                </div>
+                <p class="citation">[Sanford-Hsu-Telgarsky’24] "Transformers, parallel computation, and logarithmic depth"</p>
+            </section>
+
+            <section>
+                <h3>The Visual Difference</h3>
+                <div class="container">
+                    <div class="matrix-wrapper">
+                        <h4>Encoder</h4>
+                        <p style="font-size:0.6em">Full Visibility (MPC Broadcast)</p>
+                        <div class="matrix">
+                            <div class="cell active"></div><div class="cell active"></div><div class="cell active"></div><div class="cell active"></div>
+                            <div class="cell active"></div><div class="cell active"></div><div class="cell active"></div><div class="cell active"></div>
+                            <div class="cell active"></div><div class="cell active"></div><div class="cell active"></div><div class="cell active"></div>
+                            <div class="cell active"></div><div class="cell active"></div><div class="cell active"></div><div class="cell active"></div>
+                        </div>
+                    </div>
+                    <div class="matrix-wrapper">
+                        <h4>Decoder</h4>
+                        <p style="font-size:0.6em">Causal Masking (Restricted)</p>
+                        <div class="matrix">
+                            <div class="cell active"></div><div class="cell masked"></div><div class="cell masked"></div><div class="cell masked"></div>
+                            <div class="cell active"></div><div class="cell active"></div><div class="cell masked"></div><div class="cell masked"></div>
+                            <div class="cell active"></div><div class="cell active"></div><div class="cell active"></div><div class="cell masked"></div>
+                            <div class="cell active"></div><div class="cell active"></div><div class="cell active"></div><div class="cell active"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>The Exponential Separation</h3>
+                <div class="theorem-block">
+                    <strong>Theorem [Chen-Peng-Wu’25]:</strong>
+                    There exist tasks (function composition) where:
+                    <ul>
+                        <li><strong>Encoder:</strong> Solves with $log L$ layers with width $Hdp = O(\log n)$.</li>
+                        <li><strong>Decoder:</strong> Requires width $Hdp = n^{\Omega(1)}$ (exponential blowup) for same $L$.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Part 4: Chain-of-Thought (CoT)</h2>
+                <p>Breaking the Barrier</p>
+            </section>
+
+            <section>
+                <h3>CoT = Circuit Simulation</h3>
+                <p>With CoT, we are no longer bound by the depth of the Transformer.</p>
+                <div class="mermaid">
+                    graph LR
+                    Input --> T1[Step 1]
+                    T1 --> C1[CoT Token]
+                    C1 --> T2[Step 2]
+                    T2 --> C2[CoT Token]
+                </div>
+                <div class="fragment theorem-block">
+                    <strong>Result:</strong> CoT + Const-precision + $O(\log n)$ embedding can simulate <strong>$\mathsf{P/poly}$</strong>!
+                    <span class="citation">[Li-Liu-Zhou-Ma’24]</span>
+                </div>
+            </section>
+
+            <section>
+                <h3>Benefits & Limits</h3>
+                <div class="container">
+                    <div class="box">
+                        <h4>Benefit</h4>
+                        <p style="font-size:0.8em">Solves the Encoder/Decoder separation gap. Solves composition tasks with just 2 layers + CoT.</p>
+                    </div>
+                    <div class="box">
+                        <h4>Limit</h4>
+                        <p style="font-size:0.8em"><strong>Length Matters.</strong> To solve Parity or Reachability, CoT length must be proportional to circuit size (poly n).</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <h2>Summary Table</h2>
+            <table style="font-size: 0.6em;">
+                <thead>
+                    <tr><th>Model Config</th><th>Complexity</th><th>Key Limit</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Const-Bit, Const-Depth</td><td style="color: #ff79c6;">$\mathsf{AC}^0$</td><td>No Parity</td></tr>
+                    <tr><td>Log-Bit, Const-Depth</td><td style="color: #ff79c6;">$\mathsf{TC}^0$</td><td>No Reachability ($NC^1$)</td></tr>
+                    <tr><td>Log-Depth Transf.</td><td style="color: #50fa7b;">$\supseteq \mathsf{NC}^1$</td><td>Can do Regex</td></tr>
+                    <tr><td><strong>Transf. + CoT</strong></td><td style="color: #bd93f9;">$\mathsf{P/poly}$</td><td>Universal (given time)</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+
+<script>
+    // Init Reveal
+    Reveal.initialize({ hash: true, slideNumber: true, center: true, plugins: [ RevealMath.KaTeX ] });
+    
+    // Init Mermaid
+    mermaid.initialize({ startOnLoad: false, theme: 'dark' });
+    Reveal.on('ready', event => renderAll(event.currentSlide));
+    Reveal.on('slidechanged', event => renderAll(event.currentSlide));
+
+    function renderAll(slide) {
+        slide.querySelectorAll('.mermaid').forEach(div => {
+            if (!div.querySelector('svg') && div.textContent.trim() !== '') {
+                try { mermaid.init(undefined, div); } catch (e) {}
+            }
+        });
+    }
+
+    // 1. QKV Logic
+    function updateQKV() {
+        const angleDeg = document.getElementById('qAngle').value;
+        const angleRad = angleDeg * (Math.PI / 180);
+        document.getElementById('qArrow').style.transform = `rotate(${angleDeg}deg)`;
+        const keys = [{ angle: 0, color: [255, 85, 85] }, { angle: 120, color: [80, 250, 123] }, { angle: 240, color: [139, 233, 253] }];
+        let scores = keys.map(k => Math.cos(angleRad - (k.angle * Math.PI / 180)));
+        const temp = 0.5;
+        const exps = scores.map(s => Math.exp(s / temp));
+        const sumExps = exps.reduce((a, b) => a + b, 0);
+        const weights = exps.map(e => e / sumExps);
+        weights.forEach((w, i) => {
+            const bar = document.getElementById(`bar${i+1}`);
+            bar.style.height = `${w * 60}px`; bar.style.opacity = 0.3 + (w * 0.7);
+        });
+        let r=0, g=0, b=0;
+        weights.forEach((w, i) => { r += keys[i].color[0] * w; g += keys[i].color[1] * w; b += keys[i].color[2] * w; });
+        document.getElementById('resultColor').style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    }
+
+    // 2. Matrix Demo Logic (WITH FIX)
+    let logitsData = [[8, 2, 1, -5],[3, 9, 4, 0],[1, 2, 10, 3],[-2, 4, 5, 9]];
+    function initMatrixDemo() {
+        const grid = document.getElementById('logitGrid');
+        grid.innerHTML = '';
+        for(let i=0; i<4; i++) {
+            for(let j=0; j<4; j++) {
+                let input = document.createElement('input');
+                input.type = 'number'; input.className = 'cell-input';
+                input.value = logitsData[i][j];
+                input.dataset.row = i; input.dataset.col = j;
+                input.oninput = (e) => {
+                    logitsData[e.target.dataset.row][e.target.dataset.col] = parseFloat(e.target.value) || 0;
+                    updateAttentionDemo();
+                };
+                grid.appendChild(input);
+            }
+        }
+        updateAttentionDemo();
+    }
+    function updateAttentionDemo() {
+        const temp = parseFloat(document.getElementById('tempSlider').value);
+        const useMask = document.getElementById('maskToggle').checked;
+        const attnGrid = document.getElementById('attnGrid');
+        attnGrid.innerHTML = '';
+        
+        for (let i = 0; i < 4; i++) {
+            // 1. Collect valid logits to find MAX (for numerical stability)
+            let validLogits = [];
+            for (let j = 0; j < 4; j++) {
+                let isMasked = useMask && (j > i);
+                if (!isMasked) validLogits.push(logitsData[i][j]);
+            }
+            let maxLogit = Math.max(...validLogits);
+
+            // 2. Calculate Exps
+            let rowExps = [];
+            for (let j = 0; j < 4; j++) {
+                let val = logitsData[i][j];
+                let isMasked = useMask && (j > i);
+                // subtract maxLogit to prevent Infinity
+                rowExps.push(isMasked ? 0 : Math.exp((val - maxLogit) / temp));
+            }
+            
+            // 3. Sum and Normalize
+            const sum = rowExps.reduce((a, b) => a + b, 0);
+            
+            for (let j = 0; j < 4; j++) {
+                let prob = rowExps[j] / (sum || 1);
+                let isMasked = useMask && (j > i);
+                const aCell = document.createElement('div');
+                aCell.className = 'cell';
+                if (isMasked) {
+                    aCell.style.backgroundColor = '#222'; aCell.innerText = '0'; aCell.style.color = '#555';
+                } else {
+                    // Fix Display: if 1.0, show 1.0, not .00
+                    if(prob > 0.99) aCell.innerText = "1.0";
+                    else if(prob < 0.01) aCell.innerText = "0.0";
+                    else aCell.innerText = prob.toFixed(2).substring(1); 
+                    
+                    aCell.style.backgroundColor = `rgba(80, 250, 123, ${prob})`; 
+                    aCell.style.color = prob > 0.5 ? '#000' : '#fff';
+                }
+                attnGrid.appendChild(aCell);
+            }
+        }
+    }
+    // 3. Branching Program Logic
+    const bpData = { steps: 5, states: 5, perms: [0, 1, 2, 0, 3], colors: ['#ff5555', '#50fa7b', '#8be9fd', '#ffb86c', '#bd93f9'] };
+    const permTypes = [ { name: "Id", map: [0,1,2,3,4] }, { name: "(1 2)", map: [1,0,2,3,4] }, { name: "Cycle", map: [1,2,3,4,0] }, { name: "(4 5)", map: [0,1,2,4,3] }, { name: "Rev", map: [4,3,2,1,0] } ];
+
+    function drawBranchingProgram() {
+        const svg = document.getElementById('bp-svg');
+        if(!svg) return;
+        svg.innerHTML = ''; 
+        const width = 800, height = 300;
+        const marginX = 50, marginY = 60;
+        const stepWidth = (width - 2 * marginX) / bpData.steps;
+        const stateHeight = (height - marginY - 20) / (bpData.states - 1);
+        let paths = []; for(let c=0; c<bpData.states; c++) paths.push([c]);
+        for(let s=0; s<bpData.steps; s++) {
+            let map = permTypes[bpData.perms[s]].map;
+            for(let c=0; c<bpData.states; c++) paths[c].push(map[paths[c][s]]);
+        }
+        for(let c=0; c<bpData.states; c++) {
+            let pathStr = "";
+            for(let s=0; s<=bpData.steps; s++) {
+                let x = marginX + s * stepWidth;
+                let y = marginY + paths[c][s] * stateHeight;
+                pathStr += (s===0 ? "M" : "L") + `${x},${y} `;
+            }
+            const pathEl = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            pathEl.setAttribute("d", pathStr); pathEl.setAttribute("class", "bp-line");
+            pathEl.setAttribute("stroke", bpData.colors[c]); pathEl.setAttribute("fill", "none"); pathEl.setAttribute("stroke-opacity", "0.8");
+            svg.appendChild(pathEl);
+        }
+        for(let s=0; s<=bpData.steps; s++) {
+            let x = marginX + s * stepWidth;
+            for(let i=0; i<bpData.states; i++) {
+                let y = marginY + i * stateHeight;
+                const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                circle.setAttribute("cx", x); circle.setAttribute("cy", y); circle.setAttribute("r", 5); circle.setAttribute("class", "bp-node");
+                svg.appendChild(circle);
+            }
+            if(s < bpData.steps) {
+                let midX = x + stepWidth/2;
+                const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                g.style.cursor = "pointer";
+                g.onclick = () => { bpData.perms[s] = (bpData.perms[s] + 1) % permTypes.length; drawBranchingProgram(); };
+                const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                rect.setAttribute("x", midX - 25); rect.setAttribute("y", 10); rect.setAttribute("width", 50); rect.setAttribute("height", 25); rect.setAttribute("rx", 5); rect.setAttribute("fill", "#444"); rect.setAttribute("stroke", "#bd93f9");
+                const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                text.setAttribute("x", midX); text.setAttribute("y", 27); text.setAttribute("text-anchor", "middle"); text.textContent = permTypes[bpData.perms[s]].name;
+                g.appendChild(rect); g.appendChild(text); svg.appendChild(g);
+            }
+        }
+    }
+
+    window.onload = () => { updateQKV(); initMatrixDemo(); drawBranchingProgram(); };
+</script>
+
+</body>
+</html>
