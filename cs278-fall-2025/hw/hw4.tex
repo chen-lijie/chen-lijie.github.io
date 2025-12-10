@@ -90,7 +90,7 @@ The ``standard'' algorithm takes $O(n^2 d)$ time. In this problem, we will show 
 
     \textbf{Hint:} write $\langle u, v \rangle$ as a simple $\textsf{AC}^0$ circuit and arithmetize it.
 
-    \item \textbf{(15 pts) Batch Verification via Univariate Polynomials.}
+    \item \textbf{(15 pts) Batch Verification via Polynomials.}
     
     Building on the ideas from part (a), for the given set $A = \{a_1, \dots, a_n\}$, define a polynomial $P_A(x_1,\dots,x_d)$ such that for any vector $u \in \{0,1\}^d$: we have $P_A(u)$ is the number of vectors $a_i \in A$ such that $\langle a_i, u \rangle = 0$.
 
@@ -98,7 +98,9 @@ The ``standard'' algorithm takes $O(n^2 d)$ time. In this problem, we will show 
     
     \item \textbf{(25 pts) The Protocol.}
     
-    Show that you can construct another univariate polynomial $Q_A(u)$ such that $Q_A(i)$ equals $P_A(b_i)$ for all $i \in [n]$, and $Q_A(x)$ can be computed in $\tilde{O}(n \cdot \poly(d))$ time.
+    Show that you can construct another univariate polynomial $Q_A(x)$ such that $Q_A(i)$ equals $P_A(b_i)$ for all $i \in [n]$, and $Q_A(x)$ can be computed in $\tilde{O}(n \cdot \poly(d))$ time.
+
+    \paragraph{Hint:}You can use the fact that given a univariate polynomial $P(x)$ of degree $T$ and $n$ inputs $x_1, \dots, x_n$, you can compute $P(x_1), \dots, P(x_n)$ in time $\tilde{O}(n + T)$.
 
     Show that given the correct $Q_A(u)$ you can solve the \#OV problem in time $\tilde{O}(n \cdot \poly(d))$.
     
